@@ -1,4 +1,4 @@
-[gd_scene load_steps=74 format=3 uid="uid://b3yl70tf6rakl"]
+[gd_scene load_steps=76 format=3 uid="uid://b3yl70tf6rakl"]
 
 [ext_resource type="Texture2D" uid="uid://bwpxgmp1wbgdt" path="res://Assets/sprites/TrapmoorTileset_v03.png" id="1_xcwu4"]
 [ext_resource type="PackedScene" uid="uid://bfib4umqc0ux5" path="res://Scenes/Gameplay/killzone.tscn" id="2_1batb"]
@@ -18,6 +18,8 @@
 [ext_resource type="Script" path="res://Scripts/gate.gd" id="16_n6472"]
 [ext_resource type="AudioStream" uid="uid://dcjp480hp1jon" path="res://Assets/sounds/explosion.wav" id="17_sskpl"]
 [ext_resource type="PackedScene" uid="uid://dh3x1cw5v861y" path="res://Scenes/Gameplay/key.tscn" id="18_ww5tk"]
+[ext_resource type="PackedScene" uid="uid://f8osie3oycx2" path="res://Scenes/Gameplay/Chest.tscn" id="19_sap3h"]
+[ext_resource type="PackedScene" uid="uid://pqc50tpic47h" path="res://Scenes/GUI/GUI.tscn" id="20_l8dgc"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_yjkrb"]
 polygon = PackedVector2Array(-8, -8, 8, -8, 8, -0.125, -8, -0.25)
@@ -509,7 +511,7 @@ layer_3/name = "Objects"
 layer_3/z_index = 3
 layer_3/tile_data = PackedInt32Array(2162786, 327680, 5, 2818168, 327680, 5, 2818156, 327680, 5, 2818175, 327680, 5, 2818189, 327680, 5, 3407999, 327680, 5, 3408013, 327680, 5, 1638510, 327680, 5, 1638518, 327680, 5, 1441919, 327680, 5, 1441924, 327680, 5, 2162814, 327680, 5, 2228337, 327680, 5, 2818138, 327680, 5, 2162776, 327680, 5, 2031721, 327680, 5, 2228315, 327680, 7, 2883703, 327680, 7, 2359400, 327680, 7, 2293864, 327680, 7, 2359401, 327680, 7, 3604614, 327680, 7, 3604601, 327680, 7, 2883675, 393216, 7, 2883681, 393216, 7, 2883702, 393216, 268435463, 2359410, 393216, 268435463, 1704066, 393216, 268435463, 1441921, 655360, 6, 1507457, 655360, 7, 2818141, 655360, 6, 2883677, 655360, 7, 2162773, 655360, 6, 2228309, 655360, 7, 3539079, 655360, 268435462, 3604615, 655360, 268435463, 2162781, 458752, 5, 2818150, 458752, 5, 2818155, 458752, 5, 2818160, 458752, 5, 2228333, 458752, 5, 1704050, 458752, 5, 2818177, 458752, 5, 3145854, 458752, 5, 3539076, 458752, 5, 3211403, 458752, 5, 3342482, 458752, 5, 2621582, 458752, 5, 2097279, 458752, 5, 1638524, 458752, 5, 1704070, 458752, 5, 2228358, 458752, 5, 2228319, 131072, 805306375, 2228316, 131072, 536870919, 2228313, 131072, 536870919, 3604602, 65536, 1610612743, 3604613, 65536, 1879048199, 3604603, 0, 7, 3604616, 0, 1342177287, 2556041, 0, 805306375, 2359426, 131072, 805306375, 2359425, 131072, 536870919, 2359424, 327680, 7, 2359423, 393216, 7)
 
-[node name="Player" parent="." groups=["Player"] instance=ExtResource("2_bo621")]
+[node name="Player" parent="." instance=ExtResource("2_bo621")]
 position = Vector2(1537, 535)
 script = ExtResource("3_itfm5")
 
@@ -1352,8 +1354,16 @@ texture = ExtResource("10_8v7ou")
 lifetime = 1.5
 
 [node name="Key" parent="." instance=ExtResource("18_ww5tk")]
-position = Vector2(1881, 707)
+position = Vector2(2065, 421)
 collision_mask = 3
+
+[node name="Chest" parent="." instance=ExtResource("19_sap3h")]
+position = Vector2(1840, 384)
+
+[node name="Chest2" parent="." instance=ExtResource("19_sap3h")]
+position = Vector2(2085, 368)
+
+[node name="Gui" parent="." instance=ExtResource("20_l8dgc")]
 
 [connection signal="body_entered" from="GateRange" to="GateRange" method="_on_body_entered"]
 [connection signal="body_exited" from="GateRange" to="GateRange" method="_on_body_exited"]

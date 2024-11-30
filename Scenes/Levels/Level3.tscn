@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=3 uid="uid://dqhf8u13v3jq2"]
+[gd_scene load_steps=66 format=3 uid="uid://dqhf8u13v3jq2"]
 
 [ext_resource type="PackedScene" uid="uid://bfib4umqc0ux5" path="res://Scenes/Gameplay/killzone.tscn" id="1_pxki8"]
 [ext_resource type="Texture2D" uid="uid://b2hdi05th18bs" path="res://Assets/sprites/Terrain_and_Props.png" id="2_c3mo6"]
@@ -14,6 +14,8 @@
 [ext_resource type="Script" path="res://Scenes/Levels/plat_2.gd" id="11_10swn"]
 [ext_resource type="Texture2D" uid="uid://dee0f2i2wgtsh" path="res://Assets/sprites/circle_particle.png" id="13_rj4nf"]
 [ext_resource type="PackedScene" uid="uid://di6hl8njgarj2" path="res://Scenes/Gameplay/doublejump_powerup.tscn" id="14_efq25"]
+[ext_resource type="PackedScene" uid="uid://f8osie3oycx2" path="res://Scenes/Gameplay/Chest.tscn" id="15_osb4q"]
+[ext_resource type="PackedScene" uid="uid://pqc50tpic47h" path="res://Scenes/GUI/GUI.tscn" id="16_cjhj5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6m856"]
 size = Vector2(308, 84.9802)
@@ -1467,3 +1469,11 @@ environment = SubResource("Environment_7yrvu")
 
 [node name="doublejump_powerup" parent="." instance=ExtResource("14_efq25")]
 position = Vector2(2685, 1278)
+
+[node name="Chest" parent="." instance=ExtResource("15_osb4q")]
+position = Vector2(2670, 1168)
+
+[node name="Chest2" parent="." instance=ExtResource("15_osb4q")]
+position = Vector2(3048, 816)
+
+[node name="Gui" parent="." instance=ExtResource("16_cjhj5")]

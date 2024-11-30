@@ -69,7 +69,7 @@ scale_min = 0.01
 scale_max = 0.01
 color_ramp = SubResource("GradientTexture1D_a4ltv")
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 z_index = 5
 collision_layer = 2
 script = ExtResource("1_kj1wa")

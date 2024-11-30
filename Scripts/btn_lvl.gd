@@ -21,4 +21,6 @@ func _on_pressed() -> void:
 		return
 	if music_path != null:
 		AudioControl._play(music_path, 5.0)
+		Global.chestFound = 0
+		Global.score = 0
 	get_tree().change_scene_to_file(level_path)

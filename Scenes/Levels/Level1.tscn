@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=3 uid="uid://b8o1qyemctcq1"]
+[gd_scene load_steps=54 format=3 uid="uid://b8o1qyemctcq1"]
 
 [ext_resource type="PackedScene" uid="uid://bdc6ka1o6s0ae" path="res://Scenes/Gameplay/player.tscn" id="1_p18t3"]
 [ext_resource type="Script" path="res://Scripts/platerTesting.gd" id="2_51cjl"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://bmesiqqb7aibt" path="res://Scenes/Falling Leaves.tscn" id="19_ci35d"]
 [ext_resource type="PackedScene" uid="uid://pqc50tpic47h" path="res://Scenes/GUI/GUI.tscn" id="20_co4m4"]
 [ext_resource type="Script" path="res://Scripts/dash_text.gd" id="20_mtgu7"]
+[ext_resource type="PackedScene" uid="uid://f8osie3oycx2" path="res://Scenes/Gameplay/Chest.tscn" id="21_wn3mc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p4aur"]
 size = Vector2(192, 42)
@@ -475,7 +476,7 @@ _data = {
 [node name="Level 1" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_p18t3")]
-position = Vector2(55, -160)
+position = Vector2(62, -155)
 script = ExtResource("2_51cjl")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -732,6 +733,9 @@ texture = ExtResource("17_0nhiu")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Particles and Effects"]
 environment = SubResource("Environment_1xg5n")
 
+[node name="Chest" parent="Particles and Effects" instance=ExtResource("21_wn3mc")]
+position = Vector2(748, -192)
+
 [node name="Win" parent="." instance=ExtResource("16_7tjad")]
 position = Vector2(-6, 408)
 
@@ -760,5 +764,8 @@ libraries = {
 }
 
 [node name="Gui" parent="." instance=ExtResource("20_co4m4")]
+
+[node name="Chest" parent="." instance=ExtResource("21_wn3mc")]
+position = Vector2(492, 65)
 
 [connection signal="body_entered" from="dash_powerup" to="Texts/DashText" method="_on_dash_powerup_body_entered"]

@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://pqc50tpic47h"]
+[gd_scene load_steps=15 format=3 uid="uid://pqc50tpic47h"]
 
 [ext_resource type="PackedScene" uid="uid://dhdp7a0r7t3di" path="res://Scenes/GUI/pause_menu.tscn" id="1_iv3t0"]
 [ext_resource type="Script" path="res://Scripts/coin_score.gd" id="1_r0gx0"]
 [ext_resource type="FontFile" uid="uid://cjannhcncovoe" path="res://Assets/fonts/dpcomic.ttf" id="2_gk4sa"]
 [ext_resource type="Texture2D" uid="uid://toxii4f3wim7" path="res://Assets/sprites/gui_icons.png" id="3_bknb3"]
 [ext_resource type="Texture2D" uid="uid://yfs60m2fvdaa" path="res://Assets/sprites/icon_right.png" id="4_6bxnu"]
+[ext_resource type="Script" path="res://Scripts/chest_found.gd" id="4_7n6nq"]
 [ext_resource type="Texture2D" uid="uid://c7i2i43a570bp" path="res://Assets/sprites/icon_left.png" id="5_11bsw"]
 [ext_resource type="Texture2D" uid="uid://chg4atywfamyn" path="res://Assets/sprites/icon_jump.png" id="6_6qs31"]
 [ext_resource type="Texture2D" uid="uid://2lodew0njv1l" path="res://Assets/sprites/icon_dash.png" id="7_e51mo"]
@@ -38,6 +39,14 @@ offset_right = 136.0
 offset_bottom = 71.0
 label_settings = SubResource("LabelSettings_c5yvr")
 script = ExtResource("1_r0gx0")
+
+[node name="ChestFound" type="Label" parent="."]
+offset_left = 39.0
+offset_top = 119.0
+offset_right = 136.0
+offset_bottom = 165.0
+label_settings = SubResource("LabelSettings_c5yvr")
+script = ExtResource("4_7n6nq")
 
 [node name="pause" type="Button" parent="."]
 anchors_preset = 5

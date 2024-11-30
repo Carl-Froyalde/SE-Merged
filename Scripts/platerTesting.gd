@@ -11,6 +11,10 @@ var dashing = false
 var can_dash = true
 var is_climbing = false  # New variable for climbing state
 var is_hanging = false
+var start_pos : Vector2
+
+func _ready() -> void:
+	start_pos = global_position
 
 func _physics_process(delta: float) -> void:
 	$AnimatedSprite2D.play("idle")
@@ -65,6 +69,9 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+func die() -> void:
+	global_position = start_pos
 
 # Stops dashing
 func _on_dash_cooldown_timeout() -> void:
