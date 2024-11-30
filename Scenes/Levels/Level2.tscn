@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=3 uid="uid://b3yl70tf6rakl"]
+[gd_scene load_steps=74 format=3 uid="uid://b3yl70tf6rakl"]
 
 [ext_resource type="Texture2D" uid="uid://bwpxgmp1wbgdt" path="res://Assets/sprites/TrapmoorTileset_v03.png" id="1_xcwu4"]
 [ext_resource type="PackedScene" uid="uid://bfib4umqc0ux5" path="res://Scenes/Gameplay/killzone.tscn" id="2_1batb"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://bx2e6htgpcxsl" path="res://Scenes/Gameplay/Win_portal.tscn" id="13_1ywti"]
 [ext_resource type="PackedScene" uid="uid://bgwkacbrmxysu" path="res://Scenes/Gameplay/wallclimb_powerup.tscn" id="14_f4e48"]
 [ext_resource type="Script" path="res://Scripts/gate.gd" id="16_n6472"]
+[ext_resource type="AudioStream" uid="uid://dcjp480hp1jon" path="res://Assets/sounds/explosion.wav" id="17_sskpl"]
 [ext_resource type="PackedScene" uid="uid://dh3x1cw5v861y" path="res://Scenes/Gameplay/key.tscn" id="18_ww5tk"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_yjkrb"]
@@ -1317,6 +1318,9 @@ visible_ratio = 0.0
 libraries = {
 "": SubResource("AnimationLibrary_baf6s")
 }
+
+[node name="open_fx" type="AudioStreamPlayer2D" parent="GateRange"]
+stream = ExtResource("17_sskpl")
 
 [node name="Particles and Effects" type="Node" parent="."]
 
