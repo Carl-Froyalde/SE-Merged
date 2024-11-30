@@ -1,0 +1,152 @@
+[gd_scene load_steps=12 format=3 uid="uid://dhdp7a0r7t3di"]
+
+[ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="1_h6637"]
+[ext_resource type="Shader" path="res://Scripts/blur.gdshader" id="1_on8he"]
+[ext_resource type="Texture2D" uid="uid://toxii4f3wim7" path="res://Assets/sprites/gui_icons.png" id="3_umi1x"]
+[ext_resource type="StyleBox" uid="uid://iqtylcxushxl" path="res://Scripts/gui.tres" id="4_f0d0e"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d46w1"]
+texture = ExtResource("3_umi1x")
+region_rect = Rect2(81, 1, 30, 14)
+
+[sub_resource type="Theme" id="Theme_ygksm"]
+Button/styles/normal = SubResource("StyleBoxTexture_d46w1")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ptaoe"]
+shader = ExtResource("1_on8he")
+shader_parameter/lod = 0.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k5tpv"]
+
+[sub_resource type="Animation" id="Animation_lfv7i"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:material:shader_parameter/lod")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PanelContainer:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_vujue"]
+resource_name = "blur"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:material:shader_parameter/lod")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.675]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PanelContainer:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5cioc"]
+_data = {
+"RESET": SubResource("Animation_lfv7i"),
+"blur": SubResource("Animation_vujue")
+}
+
+[node name="PauseMenu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_ygksm")
+script = ExtResource("1_h6637")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_ptaoe")
+layout_mode = 0
+offset_right = 1155.0
+offset_bottom = 648.0
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.475
+anchor_right = 0.5
+anchor_bottom = 0.475
+offset_left = -186.0
+offset_top = -151.8
+offset_right = 209.0
+offset_bottom = 173.2
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("4_f0d0e")
+
+[node name="Label" type="Label" parent="PanelContainer"]
+visible = false
+layout_mode = 2
+text = "PAUSED"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Resume" type="Button" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_k5tpv")
+text = "Resume"
+
+[node name="Restart" type="Button" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_k5tpv")
+text = "Restart"
+
+[node name="Quit" type="Button" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_k5tpv")
+text = "Quit"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_5cioc")
+}
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

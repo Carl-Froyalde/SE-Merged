@@ -1,0 +1,81 @@
+[gd_scene load_steps=14 format=3 uid="uid://pqc50tpic47h"]
+
+[ext_resource type="PackedScene" uid="uid://dhdp7a0r7t3di" path="res://Scenes/GUI/pause_menu.tscn" id="1_iv3t0"]
+[ext_resource type="Script" path="res://Scripts/coin_score.gd" id="1_r0gx0"]
+[ext_resource type="FontFile" uid="uid://cjannhcncovoe" path="res://Assets/fonts/dpcomic.ttf" id="2_gk4sa"]
+[ext_resource type="Texture2D" uid="uid://toxii4f3wim7" path="res://Assets/sprites/gui_icons.png" id="3_bknb3"]
+[ext_resource type="Texture2D" uid="uid://yfs60m2fvdaa" path="res://Assets/sprites/icon_right.png" id="4_6bxnu"]
+[ext_resource type="Texture2D" uid="uid://c7i2i43a570bp" path="res://Assets/sprites/icon_left.png" id="5_11bsw"]
+[ext_resource type="Texture2D" uid="uid://chg4atywfamyn" path="res://Assets/sprites/icon_jump.png" id="6_6qs31"]
+[ext_resource type="Texture2D" uid="uid://2lodew0njv1l" path="res://Assets/sprites/icon_dash.png" id="7_e51mo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_c5yvr"]
+font = ExtResource("2_gk4sa")
+font_size = 50
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y0hsm"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3hghr"]
+texture = ExtResource("3_bknb3")
+region_rect = Rect2(1, 17, 14, 14)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h3cyr"]
+texture = ExtResource("3_bknb3")
+region_rect = Rect2(17, 2, 14, 13)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vl2op"]
+texture = ExtResource("3_bknb3")
+region_rect = Rect2(1, 17, 14, 14)
+
+[node name="Gui" type="CanvasLayer"]
+
+[node name="PauseMenu" parent="." instance=ExtResource("1_iv3t0")]
+
+[node name="CoinScore" type="Label" parent="."]
+offset_left = 39.0
+offset_top = 28.0
+offset_right = 136.0
+offset_bottom = 71.0
+label_settings = SubResource("LabelSettings_c5yvr")
+script = ExtResource("1_r0gx0")
+
+[node name="pause" type="Button" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -28.0
+offset_top = 20.0
+offset_right = 28.0
+offset_bottom = 76.0
+grow_horizontal = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_y0hsm")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_3hghr")
+theme_override_styles/hover = SubResource("StyleBoxTexture_3hghr")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_h3cyr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_vl2op")
+
+[node name="Right" type="TouchScreenButton" parent="."]
+position = Vector2(222, 512)
+scale = Vector2(6, 6)
+texture_normal = ExtResource("4_6bxnu")
+action = "Move_right"
+
+[node name="Left" type="TouchScreenButton" parent="."]
+position = Vector2(62, 511)
+scale = Vector2(6, 6)
+texture_normal = ExtResource("5_11bsw")
+action = "Move_left"
+
+[node name="Jump" type="TouchScreenButton" parent="."]
+position = Vector2(876, 451)
+scale = Vector2(6, 6)
+texture_normal = ExtResource("6_6qs31")
+action = "Jump"
+
+[node name="Dash" type="TouchScreenButton" parent="."]
+position = Vector2(1027, 520)
+scale = Vector2(6, 6)
+texture_normal = ExtResource("7_e51mo")
+action = "Dash"
+
+[connection signal="pressed" from="pause" to="PauseMenu" method="_on_pause_button_pressed"]

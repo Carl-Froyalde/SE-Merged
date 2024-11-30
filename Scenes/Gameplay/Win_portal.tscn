@@ -1,0 +1,67 @@
+[gd_scene load_steps=11 format=3 uid="uid://bx2e6htgpcxsl"]
+
+[ext_resource type="Shader" path="res://Scripts/shockwave_win.gdshader" id="1_ved4m"]
+[ext_resource type="Script" path="res://Scripts/win_portal.gd" id="1_xhgkb"]
+[ext_resource type="Texture2D" uid="uid://dee0f2i2wgtsh" path="res://Assets/sprites/circle_particle.png" id="3_yqgyv"]
+[ext_resource type="Texture2D" uid="uid://bm4tsee1k47by" path="res://Assets/sprites/floaty_64.png" id="4_s2bow"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y5jrx"]
+render_priority = 0
+shader = ExtResource("1_ved4m")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gyv0m"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_37a7s"]
+blend_mode = 1
+particles_animation = true
+particles_anim_h_frames = 7
+particles_anim_v_frames = 7
+particles_anim_loop = false
+
+[sub_resource type="Gradient" id="Gradient_bhyef"]
+offsets = PackedFloat32Array(0, 0.60199, 0.980099)
+colors = PackedColorArray(0.83, 0.802333, 0, 1, 4.42803e-06, 0.827703, 0.998513, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ooh0p"]
+gradient = SubResource("Gradient_bhyef")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_3knbp"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 18.0
+angle_min = 360.0
+angle_max = 360.0
+inherit_velocity_ratio = 50.0
+spread = 180.0
+angular_velocity_min = 100.0
+angular_velocity_max = 100.0
+gravity = Vector3(0, -100, 0)
+linear_accel_min = -2.23517e-06
+linear_accel_max = 20.0
+color_ramp = SubResource("GradientTexture1D_ooh0p")
+anim_speed_max = 1.0
+
+[node name="Win" type="Area2D"]
+material = SubResource("ShaderMaterial_y5jrx")
+position = Vector2(0, 2)
+script = ExtResource("1_xhgkb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_gyv0m")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("3_yqgyv")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+texture_filter = 2
+material = SubResource("CanvasItemMaterial_37a7s")
+scale = Vector2(1, 1.10758)
+amount = 40
+process_material = SubResource("ParticleProcessMaterial_3knbp")
+texture = ExtResource("4_s2bow")
+lifetime = 1.5
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

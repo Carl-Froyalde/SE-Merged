@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://dh3x1cw5v861y"]
+
+[ext_resource type="Script" path="res://Scripts/key.gd" id="1_fkea0"]
+[ext_resource type="Texture2D" uid="uid://umfegmthg7es" path="res://Assets/sprites/key.png" id="1_yqioc"]
+[ext_resource type="AudioStream" uid="uid://r17dgaxowifi" path="res://Assets/sounds/power_up.wav" id="3_fcct1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_68bv2"]
+radius = 5.0
+
+[node name="Key" type="Area2D"]
+collision_layer = 3
+script = ExtResource("1_fkea0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_68bv2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_yqioc")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_fcct1")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

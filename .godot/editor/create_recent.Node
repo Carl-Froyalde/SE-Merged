@@ -1,0 +1,14 @@
+AudioStreamPlayer
+CollisionShape2D
+Area2D
+AnimationPlayer
+Label
+Node2D
+Node
+Sprite2D
+GPUParticles2D
+WorldEnvironment
+TouchScreenButton
+TextureRect
+Control
+HBoxContainer

@@ -1,0 +1,72 @@
+[gd_scene load_steps=10 format=3 uid="uid://bgwkacbrmxysu"]
+
+[ext_resource type="Script" path="res://Scripts/wallclimb_powerup.gd" id="1_cbu0j"]
+[ext_resource type="Texture2D" uid="uid://c5x2hk5vxwl" path="res://Assets/sprites/wallclimb_gem.png" id="2_upugq"]
+[ext_resource type="Texture2D" uid="uid://bm4tsee1k47by" path="res://Assets/sprites/floaty_64.png" id="3_8ulw1"]
+[ext_resource type="AudioStream" uid="uid://brlq63rawds42" path="res://Assets/sounds/Powerup.mp3" id="4_7wyao"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_wg2sr"]
+blend_mode = 1
+particles_animation = true
+particles_anim_h_frames = 7
+particles_anim_v_frames = 7
+particles_anim_loop = false
+
+[sub_resource type="Gradient" id="Gradient_poiua"]
+offsets = PackedFloat32Array(0, 0.587065, 0.980099)
+colors = PackedColorArray(0, 0.686, 0.98, 1, 0.895259, 0.72719, 3.85046e-07, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_k140i"]
+gradient = SubResource("Gradient_poiua")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ft6oy"]
+lifetime_randomness = 0.72
+particle_flag_disable_z = true
+emission_shape = 2
+emission_sphere_radius = 0.01
+angle_min = 183.3
+angle_max = 360.0
+inherit_velocity_ratio = 50.0
+spread = 180.0
+angular_velocity_min = 100.0
+angular_velocity_max = 100.0
+gravity = Vector3(0, -20, 0)
+linear_accel_min = -2.23517e-06
+linear_accel_max = 20.0
+scale_min = 1.15
+scale_max = 1.8
+color_ramp = SubResource("GradientTexture1D_k140i")
+hue_variation_min = -1.0
+hue_variation_max = -1.0
+anim_speed_max = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fn6ky"]
+radius = 6.0
+
+[node name="wallclimb_powerup" type="Area2D"]
+position = Vector2(1, 0)
+collision_mask = 2
+script = ExtResource("1_cbu0j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, 0)
+scale = Vector2(0.573125, 0.573125)
+texture = ExtResource("2_upugq")
+
+[node name="GPUParticles2D2" type="GPUParticles2D" parent="."]
+texture_filter = 2
+material = SubResource("CanvasItemMaterial_wg2sr")
+scale = Vector2(1, 1.10758)
+amount = 4
+process_material = SubResource("ParticleProcessMaterial_ft6oy")
+texture = ExtResource("3_8ulw1")
+lifetime = 4.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_fn6ky")
+
+[node name="Powerup" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_7wyao")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

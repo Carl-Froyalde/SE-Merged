@@ -1,0 +1,6 @@
+res://default_env.tres
+res://Scenes/Levels/Level1.tscn
+res://Scripts/shockwave_win.gdshader
+res://Scripts/blur.gdshader
+res://Scripts/gui.tres
+res://Scripts/scroll_lvlselect.gdshader

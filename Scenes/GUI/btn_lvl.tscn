@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpw6li4h5ds8d"]
+
+[ext_resource type="Script" path="res://Scripts/btn_lvl.gd" id="1_4tfqf"]
+
+[node name="btn_lvl" type="Button"]
+offset_right = 169.0
+offset_bottom = 162.0
+text = "
+"
+script = ExtResource("1_4tfqf")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

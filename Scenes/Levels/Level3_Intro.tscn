@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=3 uid="uid://ogaaj6mxmamc"]
+
+[ext_resource type="PackedScene" uid="uid://dpw6li4h5ds8d" path="res://Scenes/GUI/btn_lvl.tscn" id="1_jwwqo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_dpp61"]
+font_size = 54
+
+[node name="Level3_Intro" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = -4.0
+offset_right = 1159.0
+offset_bottom = 647.0
+color = Color(0.874187, 0.420901, 0.492378, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_right = 1155.0
+offset_bottom = 650.0
+
+[node name="Label" type="Label" parent="CenterContainer"]
+layout_mode = 2
+text = "LEVEL 3
+"
+label_settings = SubResource("LabelSettings_dpp61")
+
+[node name="btn_back" parent="." instance=ExtResource("1_jwwqo")]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 519.0
+offset_right = 208.0
+offset_bottom = 614.0
+text = "Back
+"
+level_path = "res://Scenes/GUI/Level Select.tscn"
+music_path = "res://Assets/music/lvl3_bg.mp3.import"
+
+[node name="btn_start" parent="." instance=ExtResource("1_jwwqo")]
+layout_mode = 0
+offset_left = 948.0
+offset_top = 511.0
+offset_right = 1117.0
+offset_bottom = 606.0
+text = "Start
+"
+level_path = "res://Scenes/Levels/Level3.tscn"
+music_path = "res://Assets/music/lvl3_bg.mp3"
