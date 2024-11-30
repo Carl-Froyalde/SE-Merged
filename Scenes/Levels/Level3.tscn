@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=3 uid="uid://dqhf8u13v3jq2"]
+[gd_scene load_steps=64 format=3 uid="uid://dqhf8u13v3jq2"]
 
 [ext_resource type="PackedScene" uid="uid://bfib4umqc0ux5" path="res://Scenes/Gameplay/killzone.tscn" id="1_pxki8"]
 [ext_resource type="Texture2D" uid="uid://b2hdi05th18bs" path="res://Assets/sprites/Terrain_and_Props.png" id="2_c3mo6"]
@@ -13,6 +13,7 @@
 [ext_resource type="Script" path="res://Scenes/Levels/plat_1.gd" id="10_rdx44"]
 [ext_resource type="Script" path="res://Scenes/Levels/plat_2.gd" id="11_10swn"]
 [ext_resource type="Texture2D" uid="uid://dee0f2i2wgtsh" path="res://Assets/sprites/circle_particle.png" id="13_rj4nf"]
+[ext_resource type="PackedScene" uid="uid://di6hl8njgarj2" path="res://Scenes/Gameplay/doublejump_powerup.tscn" id="14_efq25"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6m856"]
 size = Vector2(308, 84.9802)
@@ -1059,12 +1060,24 @@ _data = {
 }
 
 [sub_resource type="Gradient" id="Gradient_cht74"]
-colors = PackedColorArray(0, 0.8835, 0.93, 1, 0.289029, 0.393749, 1, 0)
+colors = PackedColorArray(0.769607, 0.0213803, 0.424386, 1, 0.846096, 5.67943e-06, 0.537163, 0)
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_jhflr"]
 gradient = SubResource("Gradient_cht74")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_43i42"]
+particle_flag_disable_z = true
+particle_flag_damping_as_friction = true
+emission_shape_scale = Vector3(30, 1, 1)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+spread = 180.0
+gravity = Vector3(0, -50, 0)
+scale_min = 0.0
+scale_max = 0.01
+color_ramp = SubResource("GradientTexture1D_jhflr")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_plam5"]
 particle_flag_disable_z = true
 particle_flag_damping_as_friction = true
 emission_shape_scale = Vector3(30, 1, 1)
@@ -1419,6 +1432,24 @@ position = Vector2(2770, 1116)
 process_material = SubResource("ParticleProcessMaterial_43i42")
 texture = ExtResource("13_rj4nf")
 
+[node name="HarmIndicator8" type="GPUParticles2D" parent="Particles and Effects"]
+modulate = Color(2, 1.5, 1.5, 1)
+position = Vector2(2810, 914)
+process_material = SubResource("ParticleProcessMaterial_plam5")
+texture = ExtResource("13_rj4nf")
+
+[node name="HarmIndicator9" type="GPUParticles2D" parent="Particles and Effects"]
+modulate = Color(2, 1.5, 1.5, 1)
+position = Vector2(2892, 914)
+process_material = SubResource("ParticleProcessMaterial_plam5")
+texture = ExtResource("13_rj4nf")
+
+[node name="HarmIndicator10" type="GPUParticles2D" parent="Particles and Effects"]
+modulate = Color(2, 1.5, 1.5, 1)
+position = Vector2(2726, 914)
+process_material = SubResource("ParticleProcessMaterial_plam5")
+texture = ExtResource("13_rj4nf")
+
 [node name="HarmIndicator6" type="GPUParticles2D" parent="Particles and Effects"]
 modulate = Color(2, 1.5, 1.5, 1)
 position = Vector2(2921, 1116)
@@ -1433,3 +1464,6 @@ texture = ExtResource("13_rj4nf")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Particles and Effects"]
 environment = SubResource("Environment_7yrvu")
+
+[node name="doublejump_powerup" parent="." instance=ExtResource("14_efq25")]
+position = Vector2(2685, 1278)

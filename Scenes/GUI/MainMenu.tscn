@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://crpykx23pr7xa"]
+[gd_scene load_steps=31 format=3 uid="uid://crpykx23pr7xa"]
 
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_bq0ni"]
 [ext_resource type="AudioStream" uid="uid://canwu4bplrwxm" path="res://Assets/music/menu_ost.mp3" id="2_ohicw"]
@@ -48,14 +48,6 @@ region = Rect2(32, 0, 32, 32)
 atlas = ExtResource("15_m2y32")
 region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_snyqx"]
-atlas = ExtResource("15_m2y32")
-region = Rect2(0, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ec4or"]
-atlas = ExtResource("15_m2y32")
-region = Rect2(32, 32, 32, 32)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_6m165"]
 animations = [{
 "frames": [{
@@ -68,17 +60,6 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_snyqx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ec4or")
-}],
-"loop": false,
-"name": &"jump",
-"speed": 1.0
 }]
 
 [sub_resource type="Animation" id="Animation_c45b0"]
@@ -226,62 +207,62 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("AnimatedSprite2D:position")
+tracks/12/path = NodePath("ParallaxBackground/ParallaxLayer7/ground:position")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(1, 864)]
+"values": [Vector2(425, 535)]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("ParallaxBackground/ParallaxLayer7/ground:position")
+tracks/13/path = NodePath("VBoxContainer:position")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(425, 535)]
+"values": [Vector2(-1074, 42)]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("VBoxContainer:position")
+tracks/14/path = NodePath("SpectrumEchoes:position")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-1074, 42)]
+"values": [Vector2(-510, -475)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
-tracks/15/enabled = true
-tracks/15/path = NodePath("SpectrumEchoes:position")
+tracks/15/enabled = false
+tracks/15/path = NodePath("MenuOpening:autoplay")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-510, -475)]
+"update": 1,
+"values": [false]
 }
 tracks/16/type = "value"
 tracks/16/imported = false
-tracks/16/enabled = false
-tracks/16/path = NodePath("MenuOpening:autoplay")
+tracks/16/enabled = true
+tracks/16/path = NodePath("AnimatedSprite2D:position")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
+"update": 0,
+"values": [Vector2(1, 375)]
 }
 
 [sub_resource type="Animation" id="Animation_3qawb"]
@@ -328,7 +309,7 @@ tracks/2/keys = {
 }
 tracks/3/type = "value"
 tracks/3/imported = false
-tracks/3/enabled = true
+tracks/3/enabled = false
 tracks/3/path = NodePath("MenuOpening:playing")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
@@ -449,58 +430,58 @@ tracks/13/path = NodePath("ParallaxBackground/ParallaxLayer7/ground:position")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
-"times": PackedFloat32Array(1.83333, 5.2),
-"transitions": PackedFloat32Array(1, 0.5),
+"times": PackedFloat32Array(1.83333, 5.23333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(425, 535), Vector2(425, -107)]
+"values": [Vector2(425, 535), Vector2(425, -196)]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("AnimatedSprite2D:position")
+tracks/14/path = NodePath("VBoxContainer:position")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
-"times": PackedFloat32Array(1.83333, 5.2),
-"transitions": PackedFloat32Array(1, 0.5),
+"times": PackedFloat32Array(4.93333, 5.53333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1, 864), Vector2(1, 222)]
+"values": [Vector2(-1355, 42), Vector2(-174, 42)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("VBoxContainer:position")
+tracks/15/path = NodePath("SpectrumEchoes:position")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(4.96667, 5.53333),
-"transitions": PackedFloat32Array(0.466517, 1),
+"times": PackedFloat32Array(1.93333, 5.23333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-1074, 42), Vector2(-174, 42)]
+"values": [Vector2(-512, -973), Vector2(-512, -470)]
 }
 tracks/16/type = "value"
 tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("SpectrumEchoes:position")
+tracks/16/enabled = false
+tracks/16/path = NodePath("MenuOpening:autoplay")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/keys = {
-"times": PackedFloat32Array(4.93333, 5.53333),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(-406, -646), Vector2(-406, -302)]
-}
-tracks/17/type = "value"
-tracks/17/imported = false
-tracks/17/enabled = true
-tracks/17/path = NodePath("MenuOpening:autoplay")
-tracks/17/interp = 1
-tracks/17/loop_wrap = true
-tracks/17/keys = {
 "times": PackedFloat32Array(7.03333),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("AnimatedSprite2D:position")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(1.91, 5.27),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1070), Vector2(1, 375)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_y2ui7"]
@@ -559,9 +540,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -1074.0
+offset_left = -1355.0
 offset_top = 42.0
-offset_right = -818.0
+offset_right = -1099.0
 offset_bottom = 179.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -594,15 +575,18 @@ text = "Press Start"
 z_index = 2
 texture_filter = 1
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = 8
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
-offset_left = -406.0
-offset_top = -646.0
-offset_right = 618.0
-offset_bottom = -235.0
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = -973.0
+offset_right = 512.0
+offset_bottom = -562.0
 grow_horizontal = 2
-scale = Vector2(0.76, 0.76)
+grow_vertical = 2
+scale = Vector2(0.96, 0.96)
 size_flags_horizontal = 4
 texture = ExtResource("6_thebk")
 
@@ -617,12 +601,12 @@ motion_mirroring = Vector2(1150, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 modulate = Color(0.187176, 0.187176, 0.187176, 1)
 texture_repeat = 2
-position = Vector2(420, -435)
-scale = Vector2(3.62222, 3.62222)
+position = Vector2(844.889, -196)
+scale = Vector2(6.27778, 6.27778)
 texture = ExtResource("8_7x1td")
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(-14, 758)
+position = Vector2(-14, 1215)
 motion_scale = Vector2(0.2, 0.2)
 motion_mirroring = Vector2(1150, 0)
 
@@ -633,7 +617,7 @@ scale = Vector2(3.62222, 3.62222)
 texture = ExtResource("9_h1jmo")
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(-14, 758)
+position = Vector2(-14, 1215)
 motion_scale = Vector2(0.3, 0.3)
 motion_mirroring = Vector2(1150, 0)
 
@@ -644,7 +628,7 @@ scale = Vector2(3.63333, 3.63333)
 texture = ExtResource("10_mpntt")
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(-14, 758)
+position = Vector2(-14, 1215)
 motion_scale = Vector2(0.6, 0.6)
 motion_mirroring = Vector2(1150, 0)
 
@@ -655,7 +639,7 @@ scale = Vector2(3.62222, 3.62222)
 texture = ExtResource("11_3k3rc")
 
 [node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(-14, 758)
+position = Vector2(-14, 1215)
 motion_mirroring = Vector2(1150, 0)
 
 [node name="clouds5" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
@@ -665,7 +649,7 @@ scale = Vector2(3.61111, 3.61111)
 texture = ExtResource("12_a7t81")
 
 [node name="ParallaxLayer6" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(-14, 758)
+position = Vector2(-14, 1215)
 motion_scale = Vector2(1.2, 1.2)
 motion_mirroring = Vector2(1150, 0)
 
@@ -676,7 +660,7 @@ scale = Vector2(3.61111, 3.61111)
 texture = ExtResource("13_vpw02")
 
 [node name="ParallaxLayer7" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(-14, 758)
+position = Vector2(-14, 1215)
 motion_scale = Vector2(1.2, 1.2)
 motion_mirroring = Vector2(1150, 0)
 
@@ -687,7 +671,7 @@ scale = Vector2(3.61111, 3.61111)
 texture = ExtResource("14_n16qq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1, 864)
+position = Vector2(1, 375)
 scale = Vector2(5.28, 5.28)
 sprite_frames = SubResource("SpriteFrames_6m165")
 animation = &"idle"

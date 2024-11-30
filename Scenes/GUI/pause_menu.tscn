@@ -93,8 +93,10 @@ script = ExtResource("1_h6637")
 [node name="ColorRect" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_ptaoe")
 layout_mode = 0
-offset_right = 1155.0
-offset_bottom = 648.0
+offset_left = -27.0
+offset_top = -4.0
+offset_right = 1944.0
+offset_bottom = 1102.0
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 modulate = Color(1, 1, 1, 0)

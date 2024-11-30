@@ -11,3 +11,11 @@ res://Scenes/Gameplay/dash_powerup.tscn
 res://Scenes/Gameplay/doublejump_powerup.tscn
 res://Scenes/Falling Leaves.tscn
 res://Scenes/GUI/GUI.tscn
+res://Scenes/GUI/MainMenu.tscn
+res://Scripts/gate.gd
+res://Scenes/GUI/AudioControl.tscn
+res://Scenes/GUI/Level Select.tscn
+res://Scenes/Gameplay/player.tscn
+res://Scenes/GUI/pause_menu.tscn
+res://Scenes/Levels/testarea.gd
+res://Scenes/Gameplay/key.tscn
