@@ -1,13 +1,14 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1732936255
+::res://::1732946611
 Chest.gd::GDScript::-1::1732452202::0::1::::<>Node2D<>::
 coins-chests-etc-2-0-noborders.png::CompressedTexture2D::8403757058782122091::1732448259::1732787048::1::::<><>::
-default_env.tres::Environment::4725582314372804764::1732935424::0::1::::<><>::
+default_env.tres::Environment::4725582314372804764::1732936276::0::1::::<><>::
 example.tscn::PackedScene::8702067890885021674::1732801270::0::1::::<><>::uid://bdc6ka1o6s0ae::::res://Scenes/Gameplay/player.tscn<>uid://c6jboqhj8dyip::::res://Assets/sprites/world_tileset.png
-export_presets.cfg::TextFile::-1::1732724550::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1732943046::0::1::::<><>::
 fire.gd::GDScript::-1::1732523989::0::1::::<>Sprite2D<>::
 icon.png::CompressedTexture2D::3086602994177679126::1724942904::1724943659::1::::<><>::
 lava.gd::GDScript::-1::1732514129::0::1::::<>Sprite2D<>::
+README.md::TextFile::-1::1732946530::0::1::::<><>::
 ::res://Assets/::1732786916
 ::res://Assets/fonts/::1732786916
 Boxy-Bold.ttf::FontFile::8080249260236819796::1732631338::1732631345::1::::<><>::
@@ -114,10 +115,10 @@ GUI.tscn::PackedScene::1086039049565494763::1732934853::0::1::::<><>::uid://dhdp
 Level Select.tscn::PackedScene::4422601249772817443::1732806095::0::1::::<><>::res://Scripts/level_select.gd<>uid://dpw6li4h5ds8d::::res://Scenes/GUI/btn_lvl.tscn<>uid://toxii4f3wim7::::res://Assets/sprites/gui_icons.png<>res://Scripts/scroll_lvlselect.gdshader<>uid://b3wx1tqmpvjx::::res://Assets/sprites/slime_whitebg.png
 MainMenu.tscn::PackedScene::5998493692348808774::1732800915::0::1::::<><>::res://Scripts/menu.gd<>uid://canwu4bplrwxm::::res://Assets/music/menu_ost.mp3<>uid://cxn24ov8v3b6f::::res://Assets/sounds/tap.wav<>uid://mhij75lh3xrl::::res://Assets/fonts/pricedown bl.otf<>uid://dneer3v3jmroe::::res://Assets/fonts/Boxy-Bold.ttf<>uid://cett713otdem0::::res://Assets/sprites/spectrumecho.png<>res://Scripts/menuParallaxOffset.gd<>uid://dhthfhamd7rdb::::res://Assets/sprites/background/sky1.png<>uid://bilg0lft7jen7::::res://Assets/sprites/background/clouds2.png<>uid://c42gmig0k4txp::::res://Assets/sprites/background/mountains3.png<>uid://p8k55ibkuogk::::res://Assets/sprites/background/hills4.png<>uid://bpbqg5cdkeae0::::res://Assets/sprites/background/clouds5.png<>uid://cmae4gerjnnij::::res://Assets/sprites/background/clouds6.png<>uid://c0xi7o4feksv7::::res://Assets/sprites/background/ground7.png<>uid://d3e7qcwleddrh::::res://Assets/sprites/SlimeSprite.png<>uid://wimqebl4kwy1::::res://Assets/sounds/MCRost.mp3
 pause_menu.tscn::PackedScene::7657745029540217430::1732798934::0::1::::<><>::res://Scripts/pause_menu.gd<>res://Scripts/blur.gdshader<>uid://toxii4f3wim7::::res://Assets/sprites/gui_icons.png<>uid://iqtylcxushxl::::res://Scripts/gui.tres
-::res://Scenes/Levels/::1732935424
+::res://Scenes/Levels/::1732936276
 camera_2d.gd::GDScript::-1::1732543076::0::1::::<>Camera2D<>::
 game.tscn::PackedScene::3660488898183249190::1732848229::0::1::::<><>::res://Scripts/gameTest.gd<>uid://pqc50tpic47h::::res://Scenes/GUI.tscn<>uid://c6jboqhj8dyip::::res://Assets/sprites/world_tileset.png<>uid://di6hl8njgarj2::::res://Scenes/Gameplay/doublejump_powerup.tscn<>uid://bdc6ka1o6s0ae::::res://Scenes/Gameplay/player.tscn<>res://Scripts/platerTesting.gd<>res://Scripts/playerCamera.gd<>uid://bfib4umqc0ux5::::res://Scenes/Gameplay/killzone.tscn<>uid://bdu64nnrkacx3::::res://Scenes/Gameplay/coin.tscn<>uid://c5r2l7l1aym26::::res://Scenes/Gameplay/platform.tscn<>uid://bx2e6htgpcxsl::::res://Scenes/Gameplay/Win_portal.tscn<>uid://dsp1a4he3gwye::::res://Scenes/Gameplay/door.tscn<>uid://dh3x1cw5v861y::::res://Scenes/Gameplay/key.tscn<>uid://0bolmomr37nc::::res://Scenes/Gameplay/dash_powerup.tscn<>res://Scripts/dash_powerup.gd<>uid://bgwkacbrmxysu::::res://Scenes/Gameplay/wallclimb_powerup.tscn
-Level1.tscn::PackedScene::4733162294107681530::1732935424::0::1::::<><>::uid://bdc6ka1o6s0ae::::res://Scenes/Gameplay/player.tscn<>res://Scripts/platerTesting.gd<>res://Scenes/Levels/camera_2d.gd<>uid://bfib4umqc0ux5::::res://Scenes/Gameplay/killzone.tscn<>uid://eyc3l5ocri7a::::res://Assets/sprites/Ominous Jungle.png<>uid://dtemhh2rkmh1w::::res://Assets/sprites/1024x600 tiled background light 3.png<>uid://bkr1q6n38ge37::::res://Assets/sprites/1024x600 tiled background light 2.png<>uid://bnv56sqiuxdvd::::res://Assets/sprites/1024x600 tiled background light 1.png<>uid://0bolmomr37nc::::res://Scenes/Gameplay/dash_powerup.tscn<>res://Scenes/Levels/platform_1.gd<>uid://d2u3wc7kcqkgf::::res://Assets/sprites/WoodenPlatform3.png<>res://Scenes/Levels/platform_2.gd<>res://Scenes/Levels/platform_3.gd<>res://Scenes/Levels/platform_4.gd<>uid://bdu64nnrkacx3::::res://Scenes/Gameplay/coin.tscn<>uid://bx2e6htgpcxsl::::res://Scenes/Gameplay/Win_portal.tscn<>uid://dee0f2i2wgtsh::::res://Assets/sprites/circle_particle.png<>uid://bmesiqqb7aibt::::res://Scenes/Falling Leaves.tscn<>uid://pqc50tpic47h::::res://Scenes/GUI/GUI.tscn<>res://Scripts/dash_text.gd
+Level1.tscn::PackedScene::4733162294107681530::1732936276::0::1::::<><>::uid://bdc6ka1o6s0ae::::res://Scenes/Gameplay/player.tscn<>res://Scripts/platerTesting.gd<>res://Scenes/Levels/camera_2d.gd<>uid://bfib4umqc0ux5::::res://Scenes/Gameplay/killzone.tscn<>uid://eyc3l5ocri7a::::res://Assets/sprites/Ominous Jungle.png<>uid://dtemhh2rkmh1w::::res://Assets/sprites/1024x600 tiled background light 3.png<>uid://bkr1q6n38ge37::::res://Assets/sprites/1024x600 tiled background light 2.png<>uid://bnv56sqiuxdvd::::res://Assets/sprites/1024x600 tiled background light 1.png<>uid://0bolmomr37nc::::res://Scenes/Gameplay/dash_powerup.tscn<>res://Scenes/Levels/platform_1.gd<>uid://d2u3wc7kcqkgf::::res://Assets/sprites/WoodenPlatform3.png<>res://Scenes/Levels/platform_2.gd<>res://Scenes/Levels/platform_3.gd<>res://Scenes/Levels/platform_4.gd<>uid://bdu64nnrkacx3::::res://Scenes/Gameplay/coin.tscn<>uid://bx2e6htgpcxsl::::res://Scenes/Gameplay/Win_portal.tscn<>uid://dee0f2i2wgtsh::::res://Assets/sprites/circle_particle.png<>uid://bmesiqqb7aibt::::res://Scenes/Falling Leaves.tscn<>uid://pqc50tpic47h::::res://Scenes/GUI/GUI.tscn<>res://Scripts/dash_text.gd
 Level1_Intro.tscn::PackedScene::3941626417008296512::1732804457::0::1::::<><>::uid://dpw6li4h5ds8d::::res://Scenes/GUI/btn_lvl.tscn
 Level2.tscn::PackedScene::4401979746685139767::1732935262::0::1::::<><>::uid://bwpxgmp1wbgdt::::res://Assets/sprites/TrapmoorTileset_v03.png<>uid://bfib4umqc0ux5::::res://Scenes/Gameplay/killzone.tscn<>uid://bdc6ka1o6s0ae::::res://Scenes/Gameplay/player.tscn<>res://Scenes/Levels/camera_2d.gd<>res://Scripts/platerTesting.gd<>uid://b8r3m1mcgldat::::res://Scenes/Gameplay/lava.tscn<>uid://cflncda5mreor::::res://Scenes/Gameplay/fire.tscn<>uid://gtgadt8vj4cm::::res://Assets/sprites/—Pngtree—hazy white glow_6016180.png<>res://Scenes/Levels/platform_1.gd<>res://Scenes/Levels/platform_2.gd<>uid://dee0f2i2wgtsh::::res://Assets/sprites/circle_particle.png<>res://Scenes/Levels/platform_3.gd<>uid://bdu64nnrkacx3::::res://Scenes/Gameplay/coin.tscn<>uid://bx2e6htgpcxsl::::res://Scenes/Gameplay/Win_portal.tscn<>uid://bgwkacbrmxysu::::res://Scenes/Gameplay/wallclimb_powerup.tscn
 Level2_Intro.tscn::PackedScene::6725637475672149466::1732802416::0::1::::<><>::uid://dpw6li4h5ds8d::::res://Scenes/GUI/btn_lvl.tscn
@@ -135,9 +136,9 @@ MainMenu(1).tscn::PackedScene::5998493692348808774::1731819734::0::1::::<><>::re
 MainMenu.tscn::PackedScene::5998493692348808774::1732508926::0::1::::<><>::res://Scripts/menu.gd<>uid://dgable46eedoj::::res://Assets/fonts/PixelOperator8.ttf<>uid://wimqebl4kwy1::::res://Assets/sounds/MCRost.mp3<>uid://crndknoqnocr::::res://Assets/fonts/PixelOperator8-Bold.ttf<>uid://canwu4bplrwxm::::res://Assets/music/menu_ost.mp3<>uid://mhij75lh3xrl::::res://Assets/fonts/pricedown bl.otf<>uid://cxn24ov8v3b6f::::res://Assets/sounds/tap.wav<>res://Scripts/menuParallaxOffset.gd<>uid://dhthfhamd7rdb::::res://Assets/sprites/background/sky1.png<>uid://bilg0lft7jen7::::res://Assets/sprites/background/clouds2.png<>uid://c42gmig0k4txp::::res://Assets/sprites/background/mountains3.png<>uid://p8k55ibkuogk::::res://Assets/sprites/background/hills4.png<>uid://bpbqg5cdkeae0::::res://Assets/sprites/background/clouds5.png<>uid://cmae4gerjnnij::::res://Assets/sprites/background/clouds6.png<>uid://c0xi7o4feksv7::::res://Assets/sprites/background/ground7.png<>uid://d3e7qcwleddrh::::res://Assets/sprites/SlimeSprite.png
 MenuOpening(1).tscn::PackedScene::4661232019929090293::1731666991::0::1::::<><>::res://Scripts/menuParallaxOffset.gd<>uid://dhthfhamd7rdb::::res://Assets/sprites/background/sky1.png<>uid://bilg0lft7jen7::::res://Assets/sprites/background/clouds2.png<>uid://c42gmig0k4txp::::res://Assets/sprites/background/mountains3.png<>uid://p8k55ibkuogk::::res://Assets/sprites/background/hills4.png<>uid://bpbqg5cdkeae0::::res://Assets/sprites/background/clouds5.png<>uid://cmae4gerjnnij::::res://Assets/sprites/background/clouds6.png<>uid://c0xi7o4feksv7::::res://Assets/sprites/background/ground7.png
 MenuOpening.tscn::PackedScene::4661232019929090293::1731666991::0::1::::<><>::res://Scripts/menuParallaxOffset.gd<>uid://dhthfhamd7rdb::::res://Assets/sprites/background/sky1.png<>uid://bilg0lft7jen7::::res://Assets/sprites/background/clouds2.png<>uid://c42gmig0k4txp::::res://Assets/sprites/background/mountains3.png<>uid://p8k55ibkuogk::::res://Assets/sprites/background/hills4.png<>uid://bpbqg5cdkeae0::::res://Assets/sprites/background/clouds5.png<>uid://cmae4gerjnnij::::res://Assets/sprites/background/clouds6.png<>uid://c0xi7o4feksv7::::res://Assets/sprites/background/ground7.png
-::res://Scripts/::1732935428
+::res://Scripts/::1732943688
 audio_control.gd::GDScript::-1::1732858509::0::1::::<>Node<>::
-blur.gdshader::Shader::-1::1732935428::0::1::::<><>::
+blur.gdshader::Shader::-1::1732943688::0::1::::<><>::
 btn_lvl.gd::GDScript::-1::1732804218::0::1::::<>Button<>::
 coin.gd::GDScript::-1::1731644002::0::1::::<>Area2D<>::
 coin_score.gd::GDScript::-1::1731646322::0::1::::<>Label<>::
@@ -149,7 +150,7 @@ falling_leaves.gd::GDScript::-1::1732807800::0::1::::<>Node2D<>::
 game.gd::GDScript::-1::1728719556::0::1::::<>Node2D<>::
 gameTest.gd::GDScript::-1::1732809583::0::1::::<>Node2D<>::
 Global.gd::GDScript::-1::1732457622::0::1::::<>Node<>::
-gui.tres::StyleBoxTexture::595737857004414053::1732933730::0::1::::<><>::uid://toxii4f3wim7::::res://Assets/sprites/gui_icons.png
+gui.tres::StyleBoxTexture::595737857004414053::1732936262::0::1::::<><>::uid://toxii4f3wim7::::res://Assets/sprites/gui_icons.png
 key.gd::GDScript::-1::1732718196::0::1::::<>Area2D<>::
 killzone.gd::GDScript::-1::1731653570::0::1::::<>Area2D<>::
 level_select.gd::GDScript::-1::1732519748::0::1::::<>Control<>::
@@ -159,7 +160,7 @@ pause_menu.gd::GDScript::-1::1732717173::0::1::::<>Control<>::
 platerTesting.gd::GDScript::-1::1732934847::0::1::::<>CharacterBody2D<>::
 player.gd::GDScript::-1::1732812119::0::1::::<>CharacterBody2D<>::
 playerCamera.gd::GDScript::-1::1731653570::0::1::::<>Camera2D<>::
-scroll_lvlselect.gdshader::Shader::-1::1732935428::0::1::::<><>::
-shockwave_win.gdshader::Shader::-1::1732935428::0::1::::<><>::
+scroll_lvlselect.gdshader::Shader::-1::1732943688::0::1::::<><>::
+shockwave_win.gdshader::Shader::-1::1732943688::0::1::::<><>::
 wallclimb_powerup.gd::GDScript::-1::1732935045::0::1::::<>Area2D<>::
 win_portal.gd::GDScript::-1::1732519812::0::1::::<>Area2D<>::

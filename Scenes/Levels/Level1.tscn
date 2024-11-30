@@ -708,10 +708,10 @@ position = Vector2(0, 367)
 position = Vector2(0, 313)
 
 [node name="coin28" parent="Coins" instance=ExtResource("15_uhk5o")]
-position = Vector2(335, -171)
+position = Vector2(335, -183)
 
 [node name="coin29" parent="Coins" instance=ExtResource("15_uhk5o")]
-position = Vector2(418, -169)
+position = Vector2(418, -181)
 
 [node name="Chests" type="Node" parent="."]
 
