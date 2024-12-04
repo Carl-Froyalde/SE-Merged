@@ -17,3 +17,5 @@ res://Scripts/Player.gd
 res://Scripts/audio_control.gd
 res://Scripts/killzone.gd
 res://Scenes/GUI/AudioControl.tscn
+res://Scripts/gate.gd
+res://Scenes/GUI/Transition Scene.tscn
