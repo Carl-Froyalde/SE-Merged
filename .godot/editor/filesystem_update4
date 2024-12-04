@@ -19,3 +19,8 @@ res://Scripts/killzone.gd
 res://Scenes/GUI/AudioControl.tscn
 res://Scripts/gate.gd
 res://Scenes/GUI/Transition Scene.tscn
+res://Scripts/Transition.gdshader
+res://Scripts/Transitioning.gd
+res://Scenes/GUI/transition_scene.tscn
+res://Scripts/menu.gd
+res://Scripts/btn_lvl.gd

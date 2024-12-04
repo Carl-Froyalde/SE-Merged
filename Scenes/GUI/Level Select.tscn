@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://b4alujqhy3e7t"]
+[gd_scene load_steps=12 format=3 uid="uid://b4alujqhy3e7t"]
 
 [ext_resource type="Script" path="res://Scripts/level_select.gd" id="1_26kkv"]
 [ext_resource type="PackedScene" uid="uid://dpw6li4h5ds8d" path="res://Scenes/GUI/btn_lvl.tscn" id="1_86dxe"]
@@ -6,6 +6,7 @@
 [ext_resource type="Shader" path="res://Scripts/scroll_lvlselect.gdshader" id="3_7fr2q"]
 [ext_resource type="Texture2D" uid="uid://b3wx1tqmpvjx" path="res://Assets/sprites/slime_whitebg.png" id="4_26vcp"]
 [ext_resource type="Texture2D" uid="uid://bjcnetyenkamy" path="res://Assets/sprites/LevelSelect.png" id="6_ldv1m"]
+[ext_resource type="PackedScene" uid="uid://kh7fx7mtukji" path="res://Scenes/GUI/transition_scene.tscn" id="7_ogoew"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_8ww85"]
 shader = ExtResource("3_7fr2q")
@@ -111,3 +112,5 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(5, 5)
 texture = ExtResource("6_ldv1m")
+
+[node name="transition" parent="." instance=ExtResource("7_ogoew")]

@@ -14,9 +14,8 @@ func _process(delta: float) -> void:
 
 func _on_start_pressed() -> void:
 	$buttonTap.play()
-	await get_tree().create_timer(1.0).timeout
 	AudioControl.play_levelselect()
-	get_tree().change_scene_to_file("res://Scenes/GUI/Level Select.tscn")
+	TransitionScene.change_scene("res://Scenes/GUI/Level Select.tscn")
 
 func _on_settings_pressed() -> void:
 	pass # Replace with function body.

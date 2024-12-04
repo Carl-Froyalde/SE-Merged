@@ -1,14 +1,14 @@
 ColorRect
+CanvasLayer
+AnimationPlayer
+AnimationTree
 Sprite2D
 ParallaxLayer
 Label
 AudioStreamPlayer
-AnimationPlayer
 TextureRect
 CenterContainer
-CanvasLayer
 HBoxContainer
 CollisionShape2D
 GPUParticlesCollisionBox3D
 StaticBody2D
-Area2D

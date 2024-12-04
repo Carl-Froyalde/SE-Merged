@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://crpykx23pr7xa"]
+[gd_scene load_steps=32 format=3 uid="uid://crpykx23pr7xa"]
 
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_bq0ni"]
 [ext_resource type="AudioStream" uid="uid://canwu4bplrwxm" path="res://Assets/music/menu_ost.mp3" id="2_ohicw"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://c0xi7o4feksv7" path="res://Assets/sprites/background/ground7.png" id="14_n16qq"]
 [ext_resource type="Texture2D" uid="uid://d3e7qcwleddrh" path="res://Assets/sprites/SlimeSprite.png" id="15_m2y32"]
 [ext_resource type="AudioStream" uid="uid://wimqebl4kwy1" path="res://Assets/sounds/MCRost.mp3" id="16_myiaj"]
+[ext_resource type="PackedScene" uid="uid://kh7fx7mtukji" path="res://Scenes/GUI/transition_scene.tscn" id="17_hhejp"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e5p6w"]
 
@@ -680,5 +681,7 @@ animation = &"idle"
 libraries = {
 "": SubResource("AnimationLibrary_y2ui7")
 }
+
+[node name="transition" parent="." instance=ExtResource("17_hhejp")]
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
