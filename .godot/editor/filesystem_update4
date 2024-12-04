@@ -1,26 +1,17 @@
 res://default_env.tres
-res://Scenes/Levels/Level1.tscn
+res://Scenes/GUI/transition_scene.tscn
+res://Scripts/Transition.gdshader
 res://Scripts/shockwave_win.gdshader
 res://Scripts/blur.gdshader
 res://Scripts/gui.tres
 res://Scripts/scroll_lvlselect.gdshader
+res://Scripts/Transitioning.gd
+res://Scenes/Levels/Level1.tscn
 res://Scenes/Levels/Level3.tscn
 res://Scenes/Levels/Level2.tscn
-res://Scenes/Gameplay/player.tscn
 res://Scenes/GUI/GUI.tscn
-res://Scenes/GUI/Victory.tscn
-res://Scenes/GUI/Level Select.tscn
-res://Scenes/Gameplay/Chest.tscn
 res://Scenes/GUI/MainMenu.tscn
-res://Scenes/GUI/Gameover.tscn
-res://Scripts/Player.gd
-res://Scripts/audio_control.gd
-res://Scripts/killzone.gd
+res://Scenes/Gameplay/player.tscn
 res://Scenes/GUI/AudioControl.tscn
-res://Scripts/gate.gd
-res://Scenes/GUI/Transition Scene.tscn
-res://Scripts/Transition.gdshader
-res://Scripts/Transitioning.gd
-res://Scenes/GUI/transition_scene.tscn
-res://Scripts/menu.gd
-res://Scripts/btn_lvl.gd
+res://Scenes/GUI/Level Select.tscn
+res://Scripts/Player.gd

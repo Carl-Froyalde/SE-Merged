@@ -112,10 +112,12 @@ func die() -> void:
 		global_position = start_pos
 	else:
 		Engine.time_scale = 0.05
-		await get_tree().create_timer(0.1).timeout
+		await get_tree().create_timer(0.05).timeout
 		Engine.time_scale = 1.0
+		global_position = start_pos
 		AudioControl._play("res://Assets/sounds/Game Over Background.mp3")
-		get_tree().change_scene_to_file("res://Scenes/GUI/Gameover.tscn")
+		TransitionScene.change_scene("res://Scenes/GUI/Gameover.tscn")
+		
 
 
 func game_over() -> void:
