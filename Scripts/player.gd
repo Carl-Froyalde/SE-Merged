@@ -111,7 +111,11 @@ func die() -> void:
 		update_health()
 		global_position = start_pos
 	else:
-		game_over()
+		Engine.time_scale = 0.05
+		await get_tree().create_timer(0.1).timeout
+		Engine.time_scale = 1.0
+		AudioControl._play("res://Assets/sounds/Game Over Background.mp3")
+		get_tree().change_scene_to_file("res://Scenes/GUI/Gameover.tscn")
 
 
 func game_over() -> void:

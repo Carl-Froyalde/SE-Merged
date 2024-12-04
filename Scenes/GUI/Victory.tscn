@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bm5f0c2yvo7xb" path="res://Assets/sprites/coin.png" id="6_niyxm"]
 [ext_resource type="Script" path="res://Scripts/chest_found.gd" id="7_jn4t3"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ti7xm"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_plyus"]
 texture = ExtResource("2_p0kl0")
 texture_margin_left = 5.0
 texture_margin_top = 5.0
@@ -17,14 +17,14 @@ texture_margin_right = 5.0
 texture_margin_bottom = 5.0
 region_rect = Rect2(81, 18, 30, 13)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pkj1o"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gxuj6"]
 
 [sub_resource type="Theme" id="Theme_kvp72"]
-Button/styles/disabled = SubResource("StyleBoxTexture_ti7xm")
-Button/styles/focus = SubResource("StyleBoxEmpty_pkj1o")
-Button/styles/hover = SubResource("StyleBoxTexture_ti7xm")
-Button/styles/normal = SubResource("StyleBoxTexture_ti7xm")
-Button/styles/pressed = SubResource("StyleBoxTexture_ti7xm")
+Button/styles/disabled = SubResource("StyleBoxTexture_plyus")
+Button/styles/focus = SubResource("StyleBoxEmpty_gxuj6")
+Button/styles/hover = SubResource("StyleBoxTexture_plyus")
+Button/styles/normal = SubResource("StyleBoxTexture_plyus")
+Button/styles/pressed = SubResource("StyleBoxTexture_plyus")
 
 [sub_resource type="LabelSettings" id="LabelSettings_85vnk"]
 font = ExtResource("4_2sphv")
@@ -258,6 +258,7 @@ level_path = "res://Scenes/GUI/Level Select.tscn"
 music_path = "res://Assets/music/LevelSelecOST.mp3"
 
 [node name="CoinScore" type="Label" parent="."]
+layout_mode = 0
 offset_left = 196.0
 offset_top = 449.0
 offset_right = 293.0
@@ -273,6 +274,7 @@ sprite_frames = SubResource("SpriteFrames_gu85n")
 autoplay = "default"
 
 [node name="ChestFound" type="Label" parent="."]
+layout_mode = 0
 offset_left = 205.0
 offset_top = 329.0
 offset_right = 302.0
@@ -282,6 +284,7 @@ label_settings = SubResource("LabelSettings_nbl4g")
 script = ExtResource("7_jn4t3")
 
 [node name="Things Found" type="Label" parent="."]
+layout_mode = 0
 offset_left = 52.0
 offset_top = 259.0
 offset_right = 309.0

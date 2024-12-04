@@ -1,7 +1,9 @@
-AudioStreamPlayer
-AnimationPlayer
+Sprite2D
+ParallaxLayer
 Label
 ColorRect
+AudioStreamPlayer
+AnimationPlayer
 TextureRect
 CenterContainer
 CanvasLayer
@@ -11,4 +13,3 @@ GPUParticlesCollisionBox3D
 StaticBody2D
 Area2D
 AnimatedSprite2D
-AnimatableBody2D

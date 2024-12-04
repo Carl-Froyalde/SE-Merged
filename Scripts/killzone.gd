@@ -9,7 +9,7 @@ func _on_body_entered(body: Node2D) -> void:
 	cam.applyShake()
 	death.play()
 	player.velocity.y = -400
-	AudioControl._play("res://Assets/sounds/afterDeath.wav")
+	AudioControl._playFX("res://Assets/sounds/afterDeath.wav", -10.0)
 	timer.start()
 
 func _on_timer_timeout() -> void:

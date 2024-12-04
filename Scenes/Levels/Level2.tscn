@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=3 uid="uid://dqhf8u13v3jq2"]
+[gd_scene load_steps=66 format=3 uid="uid://dqhf8u13v3jq2"]
 
 [ext_resource type="PackedScene" uid="uid://bfib4umqc0ux5" path="res://Scenes/Gameplay/killzone.tscn" id="2_1batb"]
 [ext_resource type="PackedScene" uid="uid://bdc6ka1o6s0ae" path="res://Scenes/Gameplay/player.tscn" id="2_bo621"]
@@ -13,6 +13,7 @@
 [ext_resource type="Script" path="res://Scenes/Levels/plat_2.gd" id="11_p6qdn"]
 [ext_resource type="PackedScene" uid="uid://bdu64nnrkacx3" path="res://Scenes/Gameplay/coin.tscn" id="12_4j7er"]
 [ext_resource type="PackedScene" uid="uid://di6hl8njgarj2" path="res://Scenes/Gameplay/doublejump_powerup.tscn" id="13_7885o"]
+[ext_resource type="PackedScene" uid="uid://bx2e6htgpcxsl" path="res://Scenes/Gameplay/Win_portal.tscn" id="16_02eht"]
 [ext_resource type="PackedScene" uid="uid://f8osie3oycx2" path="res://Scenes/Gameplay/Chest.tscn" id="19_sap3h"]
 [ext_resource type="PackedScene" uid="uid://pqc50tpic47h" path="res://Scenes/GUI/GUI.tscn" id="20_l8dgc"]
 
@@ -1475,3 +1476,6 @@ position = Vector2(2670, 1168)
 position = Vector2(3048, 816)
 
 [node name="Gui" parent="." instance=ExtResource("20_l8dgc")]
+
+[node name="Win" parent="." instance=ExtResource("16_02eht")]
+position = Vector2(3352, 892)
