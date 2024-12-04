@@ -1,6 +1,6 @@
 extends Node
 
-var lvl_select = load("res://Assets/music/Goblins_Den_(Regular).wav")
+var lvl_select = load("res://Assets/music/LevelSelecOST.mp3")
 @onready var _music = $Music
 
 func _ready() -> void:

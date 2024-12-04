@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b7q7ko2qcayd6"
+path="res://.godot/imported/Game Over Background.mp3-fb5fc07eba9c111a09b129d59aaac12a.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Game Over Background.mp3"
+dest_files=["res://.godot/imported/Game Over Background.mp3-fb5fc07eba9c111a09b129d59aaac12a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

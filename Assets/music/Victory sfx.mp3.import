@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dbphaxgqvo6dr"
+path="res://.godot/imported/Victory sfx.mp3-364e5807af10f08ff54d5309d5089b95.mp3str"
+
+[deps]
+
+source_file="res://Assets/music/Victory sfx.mp3"
+dest_files=["res://.godot/imported/Victory sfx.mp3-364e5807af10f08ff54d5309d5089b95.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

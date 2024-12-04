@@ -16,14 +16,14 @@ grow_vertical = 2
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
 offset_top = -4.0
-offset_right = 1159.0
-offset_bottom = 647.0
+offset_right = 1933.0
+offset_bottom = 1082.0
 color = Color(0.874187, 0.420901, 0.492378, 1)
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 0
-offset_right = 1155.0
-offset_bottom = 650.0
+offset_right = 1928.0
+offset_bottom = 1085.0
 
 [node name="Label" type="Label" parent="CenterContainer"]
 layout_mode = 2
@@ -34,9 +34,10 @@ label_settings = SubResource("LabelSettings_dpp61")
 [node name="btn_back" parent="." instance=ExtResource("1_jwwqo")]
 layout_mode = 0
 offset_left = 39.0
-offset_top = 519.0
+offset_top = 895.0
 offset_right = 208.0
-offset_bottom = 614.0
+offset_bottom = 990.0
+scale = Vector2(1.59974, 1.59974)
 text = "Back
 "
 level_path = "res://Scenes/GUI/Level Select.tscn"
@@ -44,10 +45,11 @@ music_path = "res://Assets/music/lvl3_bg.mp3.import"
 
 [node name="btn_start" parent="." instance=ExtResource("1_jwwqo")]
 layout_mode = 0
-offset_left = 948.0
-offset_top = 511.0
-offset_right = 1117.0
-offset_bottom = 606.0
+offset_left = 1594.0
+offset_top = 890.0
+offset_right = 1763.0
+offset_bottom = 985.0
+scale = Vector2(1.6081, 1.6081)
 text = "Start
 "
 level_path = "res://Scenes/Levels/Level3.tscn"

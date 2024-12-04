@@ -1,7 +1,6 @@
-[gd_scene load_steps=54 format=3 uid="uid://b8o1qyemctcq1"]
+[gd_scene load_steps=53 format=3 uid="uid://b8o1qyemctcq1"]
 
 [ext_resource type="PackedScene" uid="uid://bdc6ka1o6s0ae" path="res://Scenes/Gameplay/player.tscn" id="1_p18t3"]
-[ext_resource type="Script" path="res://Scripts/platerTesting.gd" id="2_51cjl"]
 [ext_resource type="Script" path="res://Scenes/Levels/camera_2d.gd" id="3_178p0"]
 [ext_resource type="PackedScene" uid="uid://bfib4umqc0ux5" path="res://Scenes/Gameplay/killzone.tscn" id="4_chpyn"]
 [ext_resource type="Texture2D" uid="uid://eyc3l5ocri7a" path="res://Assets/sprites/Ominous Jungle.png" id="5_402ug"]
@@ -477,10 +476,9 @@ _data = {
 
 [node name="Player" parent="." instance=ExtResource("1_p18t3")]
 position = Vector2(62, -155)
-script = ExtResource("2_51cjl")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-zoom = Vector2(4, 4)
+zoom = Vector2(5, 5)
 script = ExtResource("3_178p0")
 
 [node name="killzone" parent="." instance=ExtResource("4_chpyn")]

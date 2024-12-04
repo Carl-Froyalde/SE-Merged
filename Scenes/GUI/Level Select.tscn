@@ -1,36 +1,32 @@
-[gd_scene load_steps=12 format=3 uid="uid://b4alujqhy3e7t"]
+[gd_scene load_steps=11 format=3 uid="uid://b4alujqhy3e7t"]
 
 [ext_resource type="Script" path="res://Scripts/level_select.gd" id="1_26kkv"]
 [ext_resource type="PackedScene" uid="uid://dpw6li4h5ds8d" path="res://Scenes/GUI/btn_lvl.tscn" id="1_86dxe"]
-[ext_resource type="FontFile" uid="uid://cjannhcncovoe" path="res://Assets/fonts/dpcomic.ttf" id="2_k80d3"]
 [ext_resource type="Texture2D" uid="uid://toxii4f3wim7" path="res://Assets/sprites/gui_icons.png" id="2_mb3n0"]
 [ext_resource type="Shader" path="res://Scripts/scroll_lvlselect.gdshader" id="3_7fr2q"]
 [ext_resource type="Texture2D" uid="uid://b3wx1tqmpvjx" path="res://Assets/sprites/slime_whitebg.png" id="4_26vcp"]
+[ext_resource type="Texture2D" uid="uid://bjcnetyenkamy" path="res://Assets/sprites/LevelSelect.png" id="6_ldv1m"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_scf0o"]
-font = ExtResource("2_k80d3")
-font_size = 60
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8ww85"]
+shader = ExtResource("3_7fr2q")
+shader_parameter/speed = 0.3
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ti7xm"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s14db"]
 texture = ExtResource("2_mb3n0")
 texture_margin_left = 5.0
 texture_margin_top = 5.0
 texture_margin_right = 5.0
 texture_margin_bottom = 5.0
-region_rect = Rect2(33, 49, 30, 14)
+region_rect = Rect2(81, 1, 30, 14)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pkj1o"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_58jdt"]
 
 [sub_resource type="Theme" id="Theme_y6g4y"]
-Button/styles/disabled = SubResource("StyleBoxTexture_ti7xm")
-Button/styles/focus = SubResource("StyleBoxEmpty_pkj1o")
-Button/styles/hover = SubResource("StyleBoxTexture_ti7xm")
-Button/styles/normal = SubResource("StyleBoxTexture_ti7xm")
-Button/styles/pressed = SubResource("StyleBoxTexture_ti7xm")
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_8ww85"]
-shader = ExtResource("3_7fr2q")
-shader_parameter/speed = 0.5
+Button/styles/disabled = SubResource("StyleBoxTexture_s14db")
+Button/styles/focus = SubResource("StyleBoxEmpty_58jdt")
+Button/styles/hover = SubResource("StyleBoxTexture_s14db")
+Button/styles/normal = SubResource("StyleBoxTexture_s14db")
+Button/styles/pressed = SubResource("StyleBoxTexture_s14db")
 
 [node name="LevelSelect" type="Control"]
 texture_filter = 1
@@ -46,36 +42,39 @@ script = ExtResource("1_26kkv")
 layout_mode = 0
 offset_right = 1924.0
 offset_bottom = 1087.0
-color = Color(0.246918, 0.446974, 0.381681, 1)
+color = Color(0.222189, 0.412161, 0.612006, 1)
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
-layout_mode = 2
-alignment = 1
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-text = "LEVEL SELECT"
-label_settings = SubResource("LabelSettings_scf0o")
-horizontal_alignment = 1
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.08, 0.08, 0.08, 0.360784)
+self_modulate = Color(1, 1, 1, 0.509804)
+texture_filter = 1
+texture_repeat = 2
+material = SubResource("ShaderMaterial_8ww85")
+layout_mode = 0
+offset_left = -1482.0
+offset_top = -1316.0
+offset_right = -220.0
+offset_bottom = -54.0
+scale = Vector2(10, 10)
+texture = ExtResource("4_26vcp")
+expand_mode = 5
+stretch_mode = 1
 
 [node name="Levels" type="GridContainer" parent="."]
 texture_filter = 1
+custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
-offset_left = 598.0
-offset_top = 638.0
-offset_right = 813.0
-offset_bottom = 671.0
+anchor_left = 0.497
+anchor_top = 0.652
+anchor_right = 0.497
+anchor_bottom = 0.652
+offset_left = -431.24
+offset_top = -66.16
+offset_right = -216.24
+offset_bottom = -33.16
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(3.38384, 3.38384)
+scale = Vector2(4, 4)
 size_flags_horizontal = 4
 theme = SubResource("Theme_y6g4y")
 columns = 3
@@ -97,17 +96,18 @@ layout_mode = 2
 text = "LEVEL 3"
 level_path = "res://Scenes/Levels/Level3_Intro.tscn"
 
-[node name="TextureRect" type="TextureRect" parent="."]
-visible = false
-self_modulate = Color(1, 1, 1, 0.509804)
-texture_filter = 1
-texture_repeat = 2
-material = SubResource("ShaderMaterial_8ww85")
-layout_mode = 0
-offset_left = -67.0
-offset_top = -360.0
-offset_right = 1195.0
-offset_bottom = 902.0
-texture = ExtResource("4_26vcp")
-expand_mode = 5
-stretch_mode = 1
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.496
+anchor_top = 0.187
+anchor_right = 0.496
+anchor_bottom = 0.187
+offset_left = -326.32
+offset_top = -87.96
+offset_right = -196.32
+offset_bottom = -23.96
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(5, 5)
+texture = ExtResource("6_ldv1m")

@@ -16,14 +16,14 @@ grow_vertical = 2
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
 offset_top = -4.0
-offset_right = 1159.0
-offset_bottom = 647.0
+offset_right = 1928.0
+offset_bottom = 1079.0
 color = Color(0.479772, 0.635182, 0.452644, 1)
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 0
-offset_right = 1155.0
-offset_bottom = 650.0
+offset_right = 1912.0
+offset_bottom = 1076.0
 
 [node name="Label" type="Label" parent="CenterContainer"]
 layout_mode = 2
@@ -33,19 +33,21 @@ label_settings = SubResource("LabelSettings_dpp61")
 [node name="btn_back" parent="." instance=ExtResource("1_4bb1t")]
 layout_mode = 0
 offset_left = 39.0
-offset_top = 519.0
+offset_top = 873.0
 offset_right = 208.0
-offset_bottom = 614.0
+offset_bottom = 968.0
+scale = Vector2(1.80968, 1.80968)
 text = "Back
 "
 level_path = "res://Scenes/GUI/Level Select.tscn"
 
 [node name="btn_start" parent="." instance=ExtResource("1_4bb1t")]
 layout_mode = 0
-offset_left = 948.0
-offset_top = 511.0
-offset_right = 1117.0
-offset_bottom = 606.0
+offset_left = 1584.0
+offset_top = 874.0
+offset_right = 1753.0
+offset_bottom = 969.0
+scale = Vector2(1.8121, 1.8121)
 text = "Start
 "
 level_path = "res://Scenes/Levels/Level1.tscn"
