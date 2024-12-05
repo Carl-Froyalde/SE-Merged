@@ -1277,11 +1277,6 @@ position = Vector2(1991, 818)
 [node name="coin30" parent="Coin" instance=ExtResource("9_e4fmi")]
 position = Vector2(1498.36, 693.902)
 
-[node name="Win" parent="." instance=ExtResource("13_yo21d")]
-z_index = 3
-z_as_relative = false
-position = Vector2(1385, 700)
-
 [node name="wallclimb_powerup" parent="." instance=ExtResource("14_eafkm")]
 position = Vector2(2151, 654)
 
@@ -1336,7 +1331,7 @@ environment = SubResource("Environment_alwyx")
 [node name="HarmIndicator2" type="GPUParticles2D" parent="Particles and Effects"]
 modulate = Color(2, 1.5, 1.5, 1)
 position = Vector2(1729, 798)
-amount = 20
+amount = 5
 process_material = SubResource("ParticleProcessMaterial_tqjxh")
 texture = ExtResource("13_rj4nf")
 lifetime = 1.5
@@ -1344,7 +1339,7 @@ lifetime = 1.5
 [node name="HarmIndicator3" type="GPUParticles2D" parent="Particles and Effects"]
 modulate = Color(2, 1.5, 1.5, 1)
 position = Vector2(1738, 646)
-amount = 20
+amount = 5
 process_material = SubResource("ParticleProcessMaterial_eeip5")
 texture = ExtResource("13_rj4nf")
 lifetime = 1.5
@@ -1352,7 +1347,7 @@ lifetime = 1.5
 [node name="HarmIndicator4" type="GPUParticles2D" parent="Particles and Effects"]
 modulate = Color(2, 1.5, 1.5, 1)
 position = Vector2(2145, 941)
-amount = 20
+amount = 5
 process_material = SubResource("ParticleProcessMaterial_hye6m")
 texture = ExtResource("13_rj4nf")
 lifetime = 1.5
@@ -1368,6 +1363,10 @@ position = Vector2(1840, 384)
 position = Vector2(2085, 368)
 
 [node name="Gui" parent="." instance=ExtResource("16_cjhj5")]
+
+[node name="Win" parent="." instance=ExtResource("13_yo21d")]
+z_index = 2
+position = Vector2(1381, 703)
 
 [connection signal="body_entered" from="GateRange" to="GateRange" method="_on_body_entered"]
 [connection signal="body_exited" from="GateRange" to="GateRange" method="_on_body_exited"]

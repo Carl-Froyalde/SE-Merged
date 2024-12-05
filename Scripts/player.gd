@@ -106,7 +106,7 @@ func start_dash() -> void:
 
 
 func die() -> void:
-	if currentHealth > 0:
+	if currentHealth > 1:
 		currentHealth -= 1
 		update_health()
 		global_position = start_pos

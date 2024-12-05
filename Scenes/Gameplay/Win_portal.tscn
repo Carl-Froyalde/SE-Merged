@@ -57,11 +57,9 @@ texture = ExtResource("3_yqgyv")
 texture_filter = 2
 material = SubResource("CanvasItemMaterial_37a7s")
 scale = Vector2(1, 1.10758)
-amount = 40
+amount = 10
 process_material = SubResource("ParticleProcessMaterial_3knbp")
 texture = ExtResource("4_s2bow")
 lifetime = 1.5
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

@@ -1452,60 +1452,70 @@ libraries = {
 [node name="HarmIndicator" type="GPUParticles2D" parent="Particles and Effects"]
 modulate = Color(2, 1.5, 1.5, 1)
 position = Vector2(2208, 1089)
+amount = 3
 process_material = SubResource("ParticleProcessMaterial_43i42")
 texture = ExtResource("10_8v7ou")
 
 [node name="HarmIndicator2" type="GPUParticles2D" parent="Particles and Effects"]
 modulate = Color(2, 1.5, 1.5, 1)
 position = Vector2(2288, 1089)
+amount = 3
 process_material = SubResource("ParticleProcessMaterial_43i42")
 texture = ExtResource("10_8v7ou")
 
 [node name="HarmIndicator3" type="GPUParticles2D" parent="Particles and Effects"]
 modulate = Color(2, 1.5, 1.5, 1)
 position = Vector2(2374, 1089)
+amount = 3
 process_material = SubResource("ParticleProcessMaterial_43i42")
 texture = ExtResource("10_8v7ou")
 
 [node name="HarmIndicator4" type="GPUParticles2D" parent="Particles and Effects"]
 modulate = Color(2, 1.5, 1.5, 1)
 position = Vector2(2449, 1089)
+amount = 3
 process_material = SubResource("ParticleProcessMaterial_43i42")
 texture = ExtResource("10_8v7ou")
 
 [node name="HarmIndicator5" type="GPUParticles2D" parent="Particles and Effects"]
 modulate = Color(2, 1.5, 1.5, 1)
 position = Vector2(2770, 1116)
+amount = 3
 process_material = SubResource("ParticleProcessMaterial_43i42")
 texture = ExtResource("10_8v7ou")
 
 [node name="HarmIndicator8" type="GPUParticles2D" parent="Particles and Effects"]
 modulate = Color(2, 1.5, 1.5, 1)
 position = Vector2(2810, 914)
+amount = 3
 process_material = SubResource("ParticleProcessMaterial_plam5")
 texture = ExtResource("10_8v7ou")
 
 [node name="HarmIndicator9" type="GPUParticles2D" parent="Particles and Effects"]
 modulate = Color(2, 1.5, 1.5, 1)
 position = Vector2(2892, 914)
+amount = 3
 process_material = SubResource("ParticleProcessMaterial_plam5")
 texture = ExtResource("10_8v7ou")
 
 [node name="HarmIndicator10" type="GPUParticles2D" parent="Particles and Effects"]
 modulate = Color(2, 1.5, 1.5, 1)
 position = Vector2(2726, 914)
+amount = 3
 process_material = SubResource("ParticleProcessMaterial_plam5")
 texture = ExtResource("10_8v7ou")
 
 [node name="HarmIndicator6" type="GPUParticles2D" parent="Particles and Effects"]
 modulate = Color(2, 1.5, 1.5, 1)
 position = Vector2(2921, 1116)
+amount = 3
 process_material = SubResource("ParticleProcessMaterial_43i42")
 texture = ExtResource("10_8v7ou")
 
 [node name="HarmIndicator7" type="GPUParticles2D" parent="Particles and Effects"]
 modulate = Color(2, 1.5, 1.5, 1)
 position = Vector2(2825, 1331)
+amount = 3
 process_material = SubResource("ParticleProcessMaterial_4ne2v")
 texture = ExtResource("10_8v7ou")
 

@@ -32,22 +32,22 @@ label_settings = SubResource("LabelSettings_dpp61")
 
 [node name="btn_back" parent="." instance=ExtResource("1_j2xvc")]
 layout_mode = 0
-offset_left = 39.0
+offset_left = 87.0
 offset_top = 882.0
-offset_right = 208.0
+offset_right = 256.0
 offset_bottom = 977.0
-scale = Vector2(1.69811, 1.69811)
+scale = Vector2(1.1, 1.1)
 text = "Back
 "
 level_path = "res://Scenes/GUI/Level Select.tscn"
 
 [node name="btn_start" parent="." instance=ExtResource("1_j2xvc")]
 layout_mode = 0
-offset_left = 1583.0
+offset_left = 1631.0
 offset_top = 883.0
-offset_right = 1752.0
+offset_right = 1800.0
 offset_bottom = 978.0
-scale = Vector2(1.70887, 1.70887)
+scale = Vector2(1.1, 1.1)
 text = "Start
 "
 level_path = "res://Scenes/Levels/Level2.tscn"
