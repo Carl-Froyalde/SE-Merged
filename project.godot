@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Software Engineering 1 - Mobile Application Game"
+config/name="Spectrum Echoes"
 run/main_scene="res://Scenes/GUI/MainMenu.tscn"
 config/features=PackedStringArray("4.3")
 config/icon="res://icon.png"

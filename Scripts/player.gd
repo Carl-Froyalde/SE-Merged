@@ -17,9 +17,6 @@ var start_pos : Vector2
 var wallJumpCount = 0
 var maxWallJump = 6
 
-var MaxHealth = 3
-var currentHealth = MaxHealth
-
 var heart_list : Array[TextureRect] = []
 
 func _ready() -> void:
@@ -106,8 +103,8 @@ func start_dash() -> void:
 
 
 func die() -> void:
-	if currentHealth > 1:
-		currentHealth -= 1
+	if Global.currentHealth > 1:
+		Global.currentHealth -= 1
 		update_health()
 		global_position = start_pos
 	else:
@@ -127,7 +124,7 @@ func game_over() -> void:
 
 func update_health() -> void:
 	for i in range(heart_list.size()):
-		heart_list[i].visible = i < currentHealth
+		heart_list[i].visible = i < Global.currentHealth
 
 
 # Stops dashing

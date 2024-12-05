@@ -492,7 +492,7 @@ scale_min = 0.0
 scale_max = 0.01
 color_ramp = SubResource("GradientTexture1D_tqick")
 
-[node name="Node2D" type="Node2D"]
+[node name="Level 3" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1

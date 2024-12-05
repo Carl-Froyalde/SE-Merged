@@ -6,12 +6,6 @@ func _ready() -> void:
 	$AnimationPlayer.play("onStart")
 	$AnimatedSprite2D.play("idle");
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
-
 func _on_start_pressed() -> void:
 	$buttonTap.play()
 	AudioControl.play_levelselect()
