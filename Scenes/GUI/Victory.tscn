@@ -1,6 +1,6 @@
 [gd_scene load_steps=38 format=3 uid="uid://cgn8gtvb4hwkw"]
 
-[ext_resource type="Texture2D" uid="uid://bmcbln2c524em" path="res://Scenes/Levels/vl2.png" id="1_c2g1w"]
+[ext_resource type="Texture2D" uid="uid://ccyvshmcirfvx" path="res://Assets/sprites/YouWin_Layout.jpg" id="1_7dsje"]
 [ext_resource type="Texture2D" uid="uid://toxii4f3wim7" path="res://Assets/sprites/gui_icons.png" id="2_p0kl0"]
 [ext_resource type="PackedScene" uid="uid://dpw6li4h5ds8d" path="res://Scenes/GUI/btn_lvl.tscn" id="3_5wfra"]
 [ext_resource type="FontFile" uid="uid://cjannhcncovoe" path="res://Assets/fonts/dpcomic.ttf" id="4_2sphv"]
@@ -225,11 +225,10 @@ offset_right = 1922.0
 offset_bottom = 1086.0
 color = Color(0.890196, 0.878431, 0.65098, 1)
 
-[node name="Vl2" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(975, 490)
-scale = Vector2(1.53409, 1.53409)
-texture = ExtResource("1_c2g1w")
+[node name="YouWinLayout" type="Sprite2D" parent="."]
+position = Vector2(969, 608)
+scale = Vector2(1.10301, 1.10301)
+texture = ExtResource("1_7dsje")
 
 [node name="Buttons" type="GridContainer" parent="."]
 texture_filter = 1
@@ -259,41 +258,41 @@ music_path = "res://Assets/music/LevelSelecOST.mp3"
 
 [node name="CoinScore" type="Label" parent="."]
 layout_mode = 0
-offset_left = 196.0
-offset_top = 449.0
-offset_right = 293.0
-offset_bottom = 495.0
+offset_left = 1657.0
+offset_top = 459.0
+offset_right = 1754.0
+offset_bottom = 505.0
 scale = Vector2(2, 2)
 label_settings = SubResource("LabelSettings_85vnk")
 script = ExtResource("5_mftnm")
 
 [node name="Coins" type="AnimatedSprite2D" parent="."]
-position = Vector2(91, 495)
+position = Vector2(1552, 505)
 scale = Vector2(8, 8)
 sprite_frames = SubResource("SpriteFrames_gu85n")
 autoplay = "default"
 
 [node name="ChestFound" type="Label" parent="."]
 layout_mode = 0
-offset_left = 205.0
-offset_top = 329.0
-offset_right = 302.0
-offset_bottom = 375.0
+offset_left = 1666.0
+offset_top = 339.0
+offset_right = 1763.0
+offset_bottom = 385.0
 scale = Vector2(2, 2)
 label_settings = SubResource("LabelSettings_nbl4g")
 script = ExtResource("7_jn4t3")
 
 [node name="Things Found" type="Label" parent="."]
 layout_mode = 0
-offset_left = 52.0
-offset_top = 259.0
-offset_right = 309.0
-offset_bottom = 305.0
+offset_left = 1513.0
+offset_top = 269.0
+offset_right = 1770.0
+offset_bottom = 315.0
 text = "Things Found:"
 label_settings = SubResource("LabelSettings_nbl4g")
 
 [node name="Chest" type="AnimatedSprite2D" parent="."]
-position = Vector2(117, 372)
+position = Vector2(1578, 382)
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_skvqw")
 animation = &"open"

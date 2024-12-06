@@ -9,7 +9,7 @@ const DASH_SPEED = 400
 const CLIMB_SPEED = -100.0  # Speed for climbing up the wall
 var can_double_jump = false
 var dashing = false
-var can_dash = true
+var can_dash
 var is_climbing = false  # New variable for climbing state
 var is_hanging = false
 var start_pos : Vector2
@@ -111,20 +111,16 @@ func die() -> void:
 		Engine.time_scale = 0.05
 		await get_tree().create_timer(0.05).timeout
 		Engine.time_scale = 1.0
+		Global.reset_skills()
 		global_position = start_pos
 		AudioControl._play("res://Assets/sounds/Game Over Background.mp3")
 		TransitionScene.change_scene("res://Scenes/GUI/Gameover.tscn")
 		
 
-
-func game_over() -> void:
-	print("Gameover")
-	# Implement screen transition logic here
-
-
 func update_health() -> void:
 	for i in range(heart_list.size()):
 		heart_list[i].visible = i < Global.currentHealth
+
 
 
 # Stops dashing

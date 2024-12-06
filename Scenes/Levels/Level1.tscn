@@ -1,5 +1,6 @@
-[gd_scene load_steps=53 format=3 uid="uid://b8o1qyemctcq1"]
+[gd_scene load_steps=54 format=3 uid="uid://b8o1qyemctcq1"]
 
+[ext_resource type="Script" path="res://Scripts/level_1.gd" id="1_cat3r"]
 [ext_resource type="PackedScene" uid="uid://bdc6ka1o6s0ae" path="res://Scenes/Gameplay/player.tscn" id="1_p18t3"]
 [ext_resource type="Script" path="res://Scenes/Levels/camera_2d.gd" id="3_178p0"]
 [ext_resource type="PackedScene" uid="uid://bfib4umqc0ux5" path="res://Scenes/Gameplay/killzone.tscn" id="4_chpyn"]
@@ -472,16 +473,18 @@ _data = {
 "show": SubResource("Animation_j8nha")
 }
 
-[node name="Level 1" type="Node2D"]
+[node name="Level" type="Node2D"]
+script = ExtResource("1_cat3r")
 
 [node name="Player" parent="." instance=ExtResource("1_p18t3")]
-position = Vector2(10, -36)
+position = Vector2(5, -44)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(5, 5)
 script = ExtResource("3_178p0")
 
 [node name="killzone" parent="." instance=ExtResource("4_chpyn")]
+unique_name_in_owner = true
 
 [node name="big pit" type="CollisionShape2D" parent="killzone"]
 position = Vector2(352, 379)
@@ -511,10 +514,10 @@ layer_1/tile_data = PackedInt32Array(196637, 393216, 805306376, 262173, 327680, 
 [node name="Background" type="ParallaxBackground" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="Background"]
-offset_left = -691.0
-offset_top = -632.0
-offset_right = 1896.0
-offset_bottom = 1248.0
+offset_left = -710.0
+offset_top = -515.0
+offset_right = 1877.0
+offset_bottom = 1365.0
 color = Color(0.0980392, 0.117647, 0.0588235, 1)
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Background"]
@@ -546,7 +549,7 @@ texture = ExtResource("8_eayun")
 flip_h = true
 flip_v = true
 
-[node name="dash_powerup" parent="." instance=ExtResource("9_p662h")]
+[node name="powerup" parent="." instance=ExtResource("9_p662h")]
 position = Vector2(1, -151)
 
 [node name="Platforms" type="Node" parent="."]
@@ -766,4 +769,4 @@ libraries = {
 [node name="Chest" parent="." instance=ExtResource("21_wn3mc")]
 position = Vector2(492, 65)
 
-[connection signal="body_entered" from="dash_powerup" to="Texts/DashText" method="_on_dash_powerup_body_entered"]
+[connection signal="body_entered" from="powerup" to="Texts/DashText" method="_on_dash_powerup_body_entered"]

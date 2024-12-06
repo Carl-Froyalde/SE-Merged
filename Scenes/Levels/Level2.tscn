@@ -1,5 +1,6 @@
-[gd_scene load_steps=75 format=3 uid="uid://dqhf8u13v3jq2"]
+[gd_scene load_steps=76 format=3 uid="uid://dqhf8u13v3jq2"]
 
+[ext_resource type="Script" path="res://Scripts/level_2.gd" id="1_i1xm7"]
 [ext_resource type="PackedScene" uid="uid://bfib4umqc0ux5" path="res://Scenes/Gameplay/killzone.tscn" id="2_1batb"]
 [ext_resource type="PackedScene" uid="uid://bdc6ka1o6s0ae" path="res://Scenes/Gameplay/player.tscn" id="2_bo621"]
 [ext_resource type="Texture2D" uid="uid://b2hdi05th18bs" path="res://Assets/sprites/Terrain_and_Props.png" id="2_oc7bx"]
@@ -1153,7 +1154,8 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6u0xc"]
 size = Vector2(20, 48)
 
-[node name="Level 2" type="Node2D"]
+[node name="Level" type="Node2D"]
+script = ExtResource("1_i1xm7")
 
 [node name="killzone" parent="." instance=ExtResource("2_1batb")]
 
@@ -1477,13 +1479,6 @@ amount = 3
 process_material = SubResource("ParticleProcessMaterial_43i42")
 texture = ExtResource("10_8v7ou")
 
-[node name="HarmIndicator5" type="GPUParticles2D" parent="Particles and Effects"]
-modulate = Color(2, 1.5, 1.5, 1)
-position = Vector2(2770, 1116)
-amount = 3
-process_material = SubResource("ParticleProcessMaterial_43i42")
-texture = ExtResource("10_8v7ou")
-
 [node name="HarmIndicator8" type="GPUParticles2D" parent="Particles and Effects"]
 modulate = Color(2, 1.5, 1.5, 1)
 position = Vector2(2810, 914)
@@ -1505,13 +1500,6 @@ amount = 3
 process_material = SubResource("ParticleProcessMaterial_plam5")
 texture = ExtResource("10_8v7ou")
 
-[node name="HarmIndicator6" type="GPUParticles2D" parent="Particles and Effects"]
-modulate = Color(2, 1.5, 1.5, 1)
-position = Vector2(2921, 1116)
-amount = 3
-process_material = SubResource("ParticleProcessMaterial_43i42")
-texture = ExtResource("10_8v7ou")
-
 [node name="HarmIndicator7" type="GPUParticles2D" parent="Particles and Effects"]
 modulate = Color(2, 1.5, 1.5, 1)
 position = Vector2(2825, 1331)
@@ -1522,7 +1510,7 @@ texture = ExtResource("10_8v7ou")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Particles and Effects"]
 environment = SubResource("Environment_7yrvu")
 
-[node name="doublejump_powerup" parent="." instance=ExtResource("13_7885o")]
+[node name="powerup" parent="." instance=ExtResource("13_7885o")]
 position = Vector2(2685, 1278)
 
 [node name="Chest" parent="." instance=ExtResource("19_sap3h")]
@@ -1587,6 +1575,7 @@ shape = SubResource("RectangleShape2D_6u0xc")
 position = Vector2(2588, 880)
 collision_mask = 3
 
+[connection signal="body_entered" from="Win" to="." method="_on_win_body_entered"]
 [connection signal="body_entered" from="GateRange" to="GateRange" method="_on_body_entered"]
 [connection signal="body_exited" from="GateRange" to="GateRange" method="_on_body_exited"]
 [connection signal="body_entered" from="Key" to="GateRange" method="_on_key_body_entered"]

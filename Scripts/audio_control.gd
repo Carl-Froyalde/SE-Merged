@@ -4,7 +4,7 @@ var lvl_select = load("res://Assets/music/LevelSelecOST.mp3")
 @onready var _music = $Music
 
 func _ready() -> void:
-	pass
+	$Music.autoplay = true
 
 func play_levelselect():
 	$Music.stream =  lvl_select

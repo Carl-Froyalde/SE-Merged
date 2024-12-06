@@ -4,6 +4,8 @@ extends Area2D
 @onready var cam = $"../Player/Camera2D"
 @onready var death = $death
 @onready var player = $"../Player"
+@onready var powerup = $"../powerup"
+
 
 func _on_body_entered(body: Node2D) -> void:
 	cam.applyShake()
@@ -13,5 +15,4 @@ func _on_body_entered(body: Node2D) -> void:
 	timer.start()
 
 func _on_timer_timeout() -> void:
-	
 	player.die()

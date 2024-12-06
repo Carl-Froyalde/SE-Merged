@@ -1,7 +1,8 @@
-[gd_scene load_steps=76 format=3 uid="uid://b3yl70tf6rakl"]
+[gd_scene load_steps=77 format=3 uid="uid://b3yl70tf6rakl"]
 
 [ext_resource type="Texture2D" uid="uid://bwpxgmp1wbgdt" path="res://Assets/sprites/TrapmoorTileset_v03.png" id="1_fgdtw"]
 [ext_resource type="PackedScene" uid="uid://bfib4umqc0ux5" path="res://Scenes/Gameplay/killzone.tscn" id="1_pxki8"]
+[ext_resource type="Script" path="res://Scripts/level_3.gd" id="1_q4h1i"]
 [ext_resource type="PackedScene" uid="uid://bdc6ka1o6s0ae" path="res://Scenes/Gameplay/player.tscn" id="4_te1a7"]
 [ext_resource type="Script" path="res://Scenes/Levels/camera_2d.gd" id="5_niji8"]
 [ext_resource type="PackedScene" uid="uid://b8r3m1mcgldat" path="res://Scenes/Gameplay/lava.tscn" id="5_rxueh"]
@@ -492,7 +493,8 @@ scale_min = 0.0
 scale_max = 0.01
 color_ramp = SubResource("GradientTexture1D_tqick")
 
-[node name="Level 3" type="Node2D"]
+[node name="Level" type="Node2D"]
+script = ExtResource("1_q4h1i")
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -519,6 +521,7 @@ zoom = Vector2(5, 5)
 script = ExtResource("5_niji8")
 
 [node name="killzone" parent="." instance=ExtResource("1_pxki8")]
+position = Vector2(3, 0)
 
 [node name="first pit" type="CollisionShape2D" parent="killzone"]
 position = Vector2(1728, 784)
@@ -1277,7 +1280,7 @@ position = Vector2(1991, 818)
 [node name="coin30" parent="Coin" instance=ExtResource("9_e4fmi")]
 position = Vector2(1498.36, 693.902)
 
-[node name="wallclimb_powerup" parent="." instance=ExtResource("14_eafkm")]
+[node name="powerup" parent="." instance=ExtResource("14_eafkm")]
 position = Vector2(2151, 654)
 
 [node name="GateBody" type="StaticBody2D" parent="."]
@@ -1290,7 +1293,7 @@ position = Vector2(-2, -2)
 texture = ExtResource("20_wwoo0")
 
 [node name="GateCollision" type="CollisionShape2D" parent="GateBody"]
-position = Vector2(1, -1)
+position = Vector2(4, -1)
 shape = SubResource("RectangleShape2D_br8je")
 
 [node name="GateRange" type="Area2D" parent="."]
@@ -1300,7 +1303,7 @@ collision_mask = 3
 script = ExtResource("15_p2qqc")
 
 [node name="GateArea" type="CollisionShape2D" parent="GateRange"]
-position = Vector2(-611, 44)
+position = Vector2(-577, 43)
 shape = SubResource("CircleShape2D_7yvlq")
 
 [node name="Label" type="Label" parent="GateRange"]
@@ -1371,3 +1374,4 @@ position = Vector2(1381, 703)
 [connection signal="body_entered" from="GateRange" to="GateRange" method="_on_body_entered"]
 [connection signal="body_exited" from="GateRange" to="GateRange" method="_on_body_exited"]
 [connection signal="body_entered" from="Key" to="GateRange" method="_on_key_body_entered"]
+[connection signal="body_entered" from="Win" to="." method="_on_win_body_entered"]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=21 format=3 uid="uid://f8osie3oycx2"]
+[gd_scene load_steps=22 format=3 uid="uid://f8osie3oycx2"]
 
 [ext_resource type="Script" path="res://Scripts/Chest.gd" id="1_d51st"]
 [ext_resource type="Texture2D" uid="uid://petkciqr4a5m" path="res://Assets/sprites/Chests.png" id="1_spjmn"]
+[ext_resource type="Texture2D" uid="uid://gtgadt8vj4cm" path="res://Assets/sprites/—Pngtree—hazy white glow_6016180.png" id="2_g7j7t"]
 [ext_resource type="AudioStream" uid="uid://beia7gc8emeuo" path="res://Assets/sounds/chestOpen1.mp3" id="3_7apgr"]
 [ext_resource type="AudioStream" uid="uid://flb1gb08eic7" path="res://Assets/sounds/chestOpenShimmer.wav" id="4_qwxme"]
 
@@ -120,6 +121,66 @@ tracks/1/keys = {
 "update": 1,
 "values": [false]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Shiny/Sprite2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 9)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Shiny/Sprite2D:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Shiny/Sprite2D2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-10, 10)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Shiny/Sprite2D3:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-15, 10)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Shiny/Sprite2D4:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-10, 10)]
+}
 
 [sub_resource type="Animation" id="Animation_iysqj"]
 resource_name = "shimmer"
@@ -147,6 +208,102 @@ tracks/1/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Shiny/Sprite2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.153894, 0.307786),
+"update": 0,
+"values": [Vector2(0, 9), Vector2(10, -9)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Shiny/Sprite2D:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Shiny/Sprite2D2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.176777, 0.148651),
+"update": 0,
+"values": [Vector2(-10, 10), Vector2(-24, -8)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Shiny/Sprite2D2:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(-0.0333333, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Shiny/Sprite2D3:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.105112, 0.105112),
+"update": 0,
+"values": [Vector2(-15, 10), Vector2(-10, -15)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Shiny/Sprite2D3:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(-0.0333333, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Shiny/Sprite2D4:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.241484, 0.241484),
+"update": 0,
+"values": [Vector2(-10, 10), Vector2(-4, -8)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Shiny/Sprite2D4:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(-0.0333333, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tlnc3"]
 _data = {
@@ -157,6 +314,32 @@ _data = {
 [node name="Chest" type="AnimatableBody2D"]
 script = ExtResource("1_d51st")
 
+[node name="Shiny" type="Node2D" parent="."]
+modulate = Color(1, 0.894118, 0.407843, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="Shiny"]
+position = Vector2(0, 9)
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("2_g7j7t")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Shiny"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(-15, 10)
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("2_g7j7t")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Shiny"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(-10, 10)
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("2_g7j7t")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Shiny"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(-10, 10)
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("2_g7j7t")
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_agdde")
 animation = &"open"
@@ -164,6 +347,7 @@ frame = 4
 frame_progress = 1.0
 
 [node name="ChestZone" type="Area2D" parent="."]
+visible = false
 collision_layer = 3
 collision_mask = 3
 

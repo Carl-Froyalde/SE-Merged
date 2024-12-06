@@ -8,3 +8,4 @@ script = ExtResource("1_8x88l")
 [node name="Music" type="AudioStreamPlayer2D" parent="."]
 autoplay = true
 max_distance = 10000.0
+playback_type = 1
