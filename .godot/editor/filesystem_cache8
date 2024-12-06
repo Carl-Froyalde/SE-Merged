@@ -1,8 +1,9 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1732956907
+::res://::1733462712
 Chest.gd::GDScript::-1::1732956351::0::1::::<>Node2D<>::
 coins-chests-etc-2-0-noborders.png::CompressedTexture2D::8403757058782122091::1732947224::1732956438::1::::<><>::
-default_env.tres::Environment::4725582314372804764::1732956907::0::1::::<><>::
+control.gd::GDScript::-1::1733417868::0::1::::<>Control<>::
+default_env.tres::Environment::4725582314372804764::1733462711::0::1::::<><>::
 example.tscn::PackedScene::8702067890885021674::1732947224::0::1::::<><>::uid://bdc6ka1o6s0ae::::res://Scenes/Gameplay/player.tscn<>uid://c6jboqhj8dyip::::res://Assets/sprites/world_tileset.png
 export_presets.cfg::TextFile::-1::1732947224::0::1::::<><>::
 fire.gd::GDScript::-1::1732947224::0::1::::<>Sprite2D<>::
@@ -34,7 +35,7 @@ jump.wav::AudioStreamWAV::3332608374287945799::1732947223::1732956438::1::::<><>
 MCRost.mp3::AudioStreamMP3::1561426970862034274::1732947223::1732956437::1::::<><>::
 Powerup.mp3::AudioStreamMP3::3603367509274642549::1732947223::1732956437::1::::<><>::
 tap.wav::AudioStreamWAV::6415713597987990071::1732947223::1732956438::1::::<><>::
-::res://Assets/sprites/::1732956941
+::res://Assets/sprites/::1733411834
 1024x600 tiled background light 1.png::CompressedTexture2D::3344105423745114577::1732947223::1732956438::1::::<><>::
 1024x600 tiled background light 2.png::CompressedTexture2D::3125012406029691752::1732947223::1732956438::1::::<><>::
 1024x600 tiled background light 3.png::CompressedTexture2D::8501849105848105862::1732947223::1732956438::1::::<><>::
@@ -91,40 +92,54 @@ ground7.png::CompressedTexture2D::6575586808386642082::1732947223::1732956438::1
 hills4.png::CompressedTexture2D::1121619452317810798::1732947223::1732956438::1::::<><>::
 mountains3.png::CompressedTexture2D::6864442194338251921::1732947223::1732956438::1::::<><>::
 sky1.png::CompressedTexture2D::7690241450005517915::1732947223::1732956438::1::::<><>::
-::res://Scenes/::1732956906
+::res://Assets/sprites/comic/::1733411842
+::res://Assets/sprites/comic/ComicSet/::1733462711
+::res://Assets/sprites/comic/ComicSet/IntroPerLevel/::1733411844
+4.png::CompressedTexture2D::3429908252856224198::1733411842::1733411844::1::::<><>::
+5.png::CompressedTexture2D::9020059184338261958::1733411842::1733411844::1::::<><>::
+6.png::CompressedTexture2D::7323157683571204529::1733411842::1733411844::1::::<><>::
+::res://Assets/sprites/comic/ComicSet/Outro/::1733414400
+SlimeComic1.png::CompressedTexture2D::3108490330027777832::1733414398::1733414400::1::::<><>::
+SlimeComic.png::CompressedTexture2D::8495889765429470501::1733411842::1733411844::1::::<><>::
+::res://Assets/sprites/comic/ComicSet/Short Introduction/::1733462711
+1.png::CompressedTexture2D::1157750429734232346::1733411842::1733462713::1::::<><>::
+2.png::CompressedTexture2D::7620895966668837432::1733411842::1733411844::1::::<><>::
+3.png::CompressedTexture2D::4395312343807745572::1733411842::1733411845::1::::<><>::
+::res://Scenes/::1733418440
 dust_particle.tscn::PackedScene::4589655545875752196::1732947224::0::1::::<><>::
-Falling Leaves.tscn::PackedScene::3238052375765444725::1732956906::0::1::::<><>::res://Scripts/falling_leaves.gd<>uid://c8gj7pfd6jvgq::::res://Assets/sprites/leaf.png
+Falling Leaves.tscn::PackedScene::3238052375765444725::1733418440::0::1::::<><>::res://Scripts/falling_leaves.gd<>uid://c8gj7pfd6jvgq::::res://Assets/sprites/leaf.png
 GUI.tscn::PackedScene::5328571652322159448::1732947224::0::1::::<><>::res://Scripts/coin_score.gd
-::res://Scenes/Gameplay/::1732956907
-chest.tscn::PackedScene::579521648484488144::1732956907::0::1::::<><>::res://Chest.gd<>uid://dry3werddb5et::::res://coins-chests-etc-2-0-noborders.png
+::res://Scenes/Gameplay/::1733418440
+chest.tscn::PackedScene::579521648484488144::1733418440::0::1::::<><>::res://Chest.gd<>uid://dry3werddb5et::::res://coins-chests-etc-2-0-noborders.png
 coin.tscn::PackedScene::2640209488159174066::1732947224::0::1::::<><>::res://Scripts/coin.gd<>uid://bm5f0c2yvo7xb::::res://Assets/sprites/coin.png<>uid://cw08c7y7cnb0o::::res://Assets/sounds/coin.wav
-dash_powerup.tscn::PackedScene::1757655802813098028::1732956906::0::1::::<><>::uid://be1awldsqmi::::res://Assets/sprites/dash_gem.png<>res://Scripts/dash_powerup.gd<>uid://bm4tsee1k47by::::res://Assets/sprites/floaty_64.png<>uid://brlq63rawds42::::res://Assets/sounds/Powerup.mp3
+dash_powerup.tscn::PackedScene::1757655802813098028::1733418439::0::1::::<><>::uid://be1awldsqmi::::res://Assets/sprites/dash_gem.png<>res://Scripts/dash_powerup.gd<>uid://bm4tsee1k47by::::res://Assets/sprites/floaty_64.png<>uid://brlq63rawds42::::res://Assets/sounds/Powerup.mp3
 door.tscn::PackedScene::8455207078896917052::1732956355::0::1::::<><>::res://Scripts/gate.gd<>uid://dkamlu1vegryr::::res://Assets/sprites/door.png
-doublejump_powerup.tscn::PackedScene::7785214927011703377::1732956906::0::1::::<><>::res://Scripts/doublejump_powerup.gd<>uid://bm4tsee1k47by::::res://Assets/sprites/floaty_64.png<>uid://cf6k67hwatumr::::res://Assets/sprites/doublejump_gem.png<>uid://brlq63rawds42::::res://Assets/sounds/Powerup.mp3
+doublejump_powerup.tscn::PackedScene::7785214927011703377::1733418439::0::1::::<><>::res://Scripts/doublejump_powerup.gd<>uid://bm4tsee1k47by::::res://Assets/sprites/floaty_64.png<>uid://cf6k67hwatumr::::res://Assets/sprites/doublejump_gem.png<>uid://brlq63rawds42::::res://Assets/sounds/Powerup.mp3
 fire.tscn::PackedScene::5147286792314617861::1732947224::0::1::::<><>::uid://bwpxgmp1wbgdt::::res://Assets/sprites/TrapmoorTileset_v03.png<>res://fire.gd
 key.tscn::PackedScene::7709829595559216544::1732956355::0::1::::<><>::res://Scripts/key.gd<>uid://umfegmthg7es::::res://Assets/sprites/key.png<>uid://dka0m6v0vq4p1::::res://Assets/sounds/confirmation_001.ogg
 killzone.tscn::PackedScene::2753993498667051492::1732947224::0::1::::<><>::res://Scripts/killzone.gd<>uid://dt4k8mip2w2a5::::res://Assets/sounds/hurt.wav
 lava.tscn::PackedScene::4739469835135587095::1732947224::0::1::::<><>::uid://bwpxgmp1wbgdt::::res://Assets/sprites/TrapmoorTileset_v03.png<>res://lava.gd
 platform.tscn::PackedScene::6915261799806170533::1732947224::0::1::::<><>::uid://2saicaoq4jp7::::res://Assets/sprites/platforms.png
-player.tscn::PackedScene::2603016095673300648::1732956907::0::1::::<><>::res://Scripts/player.gd<>uid://dee0f2i2wgtsh::::res://Assets/sprites/circle_particle.png<>uid://d3e7qcwleddrh::::res://Assets/sprites/SlimeSprite.png<>uid://bnqltqofcdj3t::::res://Assets/sounds/jump.wav<>uid://b2r8p185fggr8::::res://Assets/sounds/Dash.mp3
-wallclimb_powerup.tscn::PackedScene::2853577333419150384::1732956906::0::1::::<><>::res://Scripts/wallclimb_powerup.gd<>uid://c5x2hk5vxwl::::res://Assets/sprites/wallclimb_gem.png<>uid://bm4tsee1k47by::::res://Assets/sprites/floaty_64.png<>uid://brlq63rawds42::::res://Assets/sounds/Powerup.mp3
+player.tscn::PackedScene::2603016095673300648::1733418440::0::1::::<><>::res://Scripts/player.gd<>uid://dee0f2i2wgtsh::::res://Assets/sprites/circle_particle.png<>uid://d3e7qcwleddrh::::res://Assets/sprites/SlimeSprite.png<>uid://bnqltqofcdj3t::::res://Assets/sounds/jump.wav<>uid://b2r8p185fggr8::::res://Assets/sounds/Dash.mp3
+wallclimb_powerup.tscn::PackedScene::2853577333419150384::1733418439::0::1::::<><>::res://Scripts/wallclimb_powerup.gd<>uid://c5x2hk5vxwl::::res://Assets/sprites/wallclimb_gem.png<>uid://bm4tsee1k47by::::res://Assets/sprites/floaty_64.png<>uid://brlq63rawds42::::res://Assets/sounds/Powerup.mp3
 Win_portal.tscn::PackedScene::4056800911617075787::1732947224::0::1::::<><>::res://Scripts/shockwave_win.gdshader<>res://Scripts/win_portal.gd<>uid://dee0f2i2wgtsh::::res://Assets/sprites/circle_particle.png<>uid://bm4tsee1k47by::::res://Assets/sprites/floaty_64.png
-::res://Scenes/GUI/::1732956906
+::res://Scenes/GUI/::1733462711
 AudioControl.tscn::PackedScene::208342662829565272::1732947224::0::1::::<><>::res://Scripts/audio_control.gd
+backstory.tscn::PackedScene::1770229649054795724::1733462711::0::1::::<><>::res://control.gd<>uid://bkj1m8dulqt8k::::res://Assets/sprites/comic/ComicSet/Outro/SlimeComic1.png<>uid://qq28lm0ucfl7::::res://Assets/sprites/comic/ComicSet/Short Introduction/1.png<>uid://dgtvbp40fborg::::res://Assets/sprites/comic/ComicSet/Short Introduction/2.png<>uid://b3veff4xjtvpk::::res://Assets/sprites/comic/ComicSet/Short Introduction/3.png
 btn_lvl.tscn::PackedScene::8259413352092225349::1732947224::0::1::::<><>::res://Scripts/btn_lvl.gd
-GUI.tscn::PackedScene::1086039049565494763::1732956906::0::1::::<><>::uid://dhdp7a0r7t3di::::res://Scenes/GUI/pause_menu.tscn<>res://Scripts/coin_score.gd<>uid://cjannhcncovoe::::res://Assets/fonts/dpcomic.ttf<>uid://toxii4f3wim7::::res://Assets/sprites/gui_icons.png<>uid://yfs60m2fvdaa::::res://Assets/sprites/icon_right.png<>uid://c7i2i43a570bp::::res://Assets/sprites/icon_left.png<>uid://chg4atywfamyn::::res://Assets/sprites/icon_jump.png<>uid://2lodew0njv1l::::res://Assets/sprites/icon_dash.png
+GUI.tscn::PackedScene::1086039049565494763::1733418440::0::1::::<><>::uid://dhdp7a0r7t3di::::res://Scenes/GUI/pause_menu.tscn<>res://Scripts/coin_score.gd<>uid://cjannhcncovoe::::res://Assets/fonts/dpcomic.ttf<>uid://toxii4f3wim7::::res://Assets/sprites/gui_icons.png<>uid://yfs60m2fvdaa::::res://Assets/sprites/icon_right.png<>uid://c7i2i43a570bp::::res://Assets/sprites/icon_left.png<>uid://chg4atywfamyn::::res://Assets/sprites/icon_jump.png<>uid://2lodew0njv1l::::res://Assets/sprites/icon_dash.png
 Level Select.tscn::PackedScene::4422601249772817443::1732956355::0::1::::<><>::res://Scripts/level_select.gd<>uid://dpw6li4h5ds8d::::res://Scenes/GUI/btn_lvl.tscn<>uid://cjannhcncovoe::::res://Assets/fonts/dpcomic.ttf<>uid://toxii4f3wim7::::res://Assets/sprites/gui_icons.png<>res://Scripts/scroll_lvlselect.gdshader<>uid://b3wx1tqmpvjx::::res://Assets/sprites/slime_whitebg.png
 MainMenu.tscn::PackedScene::5998493692348808774::1732956355::0::1::::<><>::res://Scripts/menu.gd<>uid://canwu4bplrwxm::::res://Assets/music/menu_ost.mp3<>uid://cxn24ov8v3b6f::::res://Assets/sounds/tap.wav<>uid://mhij75lh3xrl::::res://Assets/fonts/pricedown bl.otf<>uid://dneer3v3jmroe::::res://Assets/fonts/Boxy-Bold.ttf<>uid://cett713otdem0::::res://Assets/sprites/spectrumecho.png<>res://Scripts/menuParallaxOffset.gd<>uid://dhthfhamd7rdb::::res://Assets/sprites/background/sky1.png<>uid://bilg0lft7jen7::::res://Assets/sprites/background/clouds2.png<>uid://c42gmig0k4txp::::res://Assets/sprites/background/mountains3.png<>uid://p8k55ibkuogk::::res://Assets/sprites/background/hills4.png<>uid://bpbqg5cdkeae0::::res://Assets/sprites/background/clouds5.png<>uid://cmae4gerjnnij::::res://Assets/sprites/background/clouds6.png<>uid://c0xi7o4feksv7::::res://Assets/sprites/background/ground7.png<>uid://d3e7qcwleddrh::::res://Assets/sprites/SlimeSprite.png<>uid://wimqebl4kwy1::::res://Assets/sounds/MCRost.mp3
 pause_menu.tscn::PackedScene::7657745029540217430::1732956355::0::1::::<><>::res://Scripts/pause_menu.gd<>res://Scripts/blur.gdshader<>uid://toxii4f3wim7::::res://Assets/sprites/gui_icons.png<>uid://iqtylcxushxl::::res://Scripts/gui.tres
-::res://Scenes/Levels/::1732956905
+::res://Scenes/Levels/::1733418441
 camera_2d.gd::GDScript::-1::1732947224::0::1::::<>Camera2D<>::
 game.tscn::PackedScene::3660488898183249190::1732947224::0::1::::<><>::res://Scripts/gameTest.gd<>uid://pqc50tpic47h::::res://Scenes/GUI.tscn<>uid://c6jboqhj8dyip::::res://Assets/sprites/world_tileset.png<>uid://di6hl8njgarj2::::res://Scenes/Gameplay/doublejump_powerup.tscn<>uid://bdc6ka1o6s0ae::::res://Scenes/Gameplay/player.tscn<>res://Scripts/platerTesting.gd<>res://Scripts/playerCamera.gd<>uid://bfib4umqc0ux5::::res://Scenes/Gameplay/killzone.tscn<>uid://bdu64nnrkacx3::::res://Scenes/Gameplay/coin.tscn<>uid://c5r2l7l1aym26::::res://Scenes/Gameplay/platform.tscn<>uid://bx2e6htgpcxsl::::res://Scenes/Gameplay/Win_portal.tscn<>uid://dsp1a4he3gwye::::res://Scenes/Gameplay/door.tscn<>uid://dh3x1cw5v861y::::res://Scenes/Gameplay/key.tscn<>uid://0bolmomr37nc::::res://Scenes/Gameplay/dash_powerup.tscn<>res://Scripts/dash_powerup.gd<>uid://bgwkacbrmxysu::::res://Scenes/Gameplay/wallclimb_powerup.tscn
-Level1.tscn::PackedScene::4733162294107681530::1732956904::0::1::::<><>::uid://bdc6ka1o6s0ae::::res://Scenes/Gameplay/player.tscn<>res://Scripts/platerTesting.gd<>res://Scenes/Levels/camera_2d.gd<>uid://bfib4umqc0ux5::::res://Scenes/Gameplay/killzone.tscn<>uid://eyc3l5ocri7a::::res://Assets/sprites/Ominous Jungle.png<>uid://dtemhh2rkmh1w::::res://Assets/sprites/1024x600 tiled background light 3.png<>uid://bkr1q6n38ge37::::res://Assets/sprites/1024x600 tiled background light 2.png<>uid://bnv56sqiuxdvd::::res://Assets/sprites/1024x600 tiled background light 1.png<>uid://0bolmomr37nc::::res://Scenes/Gameplay/dash_powerup.tscn<>res://Scenes/Levels/platform_1.gd<>uid://d2u3wc7kcqkgf::::res://Assets/sprites/WoodenPlatform3.png<>res://Scenes/Levels/platform_2.gd<>res://Scenes/Levels/platform_3.gd<>res://Scenes/Levels/platform_4.gd<>uid://bdu64nnrkacx3::::res://Scenes/Gameplay/coin.tscn<>uid://bx2e6htgpcxsl::::res://Scenes/Gameplay/Win_portal.tscn<>uid://dee0f2i2wgtsh::::res://Assets/sprites/circle_particle.png<>uid://bmesiqqb7aibt::::res://Scenes/Falling Leaves.tscn<>uid://pqc50tpic47h::::res://Scenes/GUI/GUI.tscn<>res://Scripts/dash_text.gd
-Level1_Intro.tscn::PackedScene::3941626417008296512::1732947224::0::1::::<><>::uid://dpw6li4h5ds8d::::res://Scenes/GUI/btn_lvl.tscn
-Level2.tscn::PackedScene::4401979746685139767::1732956905::0::1::::<><>::uid://bwpxgmp1wbgdt::::res://Assets/sprites/TrapmoorTileset_v03.png<>uid://bfib4umqc0ux5::::res://Scenes/Gameplay/killzone.tscn<>uid://bdc6ka1o6s0ae::::res://Scenes/Gameplay/player.tscn<>res://Scenes/Levels/camera_2d.gd<>res://Scripts/platerTesting.gd<>uid://b8r3m1mcgldat::::res://Scenes/Gameplay/lava.tscn<>uid://cflncda5mreor::::res://Scenes/Gameplay/fire.tscn<>uid://gtgadt8vj4cm::::res://Assets/sprites/—Pngtree—hazy white glow_6016180.png<>res://Scenes/Levels/platform_1.gd<>res://Scenes/Levels/platform_2.gd<>uid://dee0f2i2wgtsh::::res://Assets/sprites/circle_particle.png<>res://Scenes/Levels/platform_3.gd<>uid://bdu64nnrkacx3::::res://Scenes/Gameplay/coin.tscn<>uid://bx2e6htgpcxsl::::res://Scenes/Gameplay/Win_portal.tscn<>uid://bgwkacbrmxysu::::res://Scenes/Gameplay/wallclimb_powerup.tscn<>res://Scripts/gate.gd<>uid://dcjp480hp1jon::::res://Assets/sounds/explosion.wav<>uid://dh3x1cw5v861y::::res://Scenes/Gameplay/key.tscn
-Level2_Intro.tscn::PackedScene::6725637475672149466::1732947224::0::1::::<><>::uid://dpw6li4h5ds8d::::res://Scenes/GUI/btn_lvl.tscn
-Level3.tscn::PackedScene::8297097801662217743::1732956905::0::1::::<><>::uid://bfib4umqc0ux5::::res://Scenes/Gameplay/killzone.tscn<>uid://b2hdi05th18bs::::res://Assets/sprites/Terrain_and_Props.png<>uid://eyc3l5ocri7a::::res://Assets/sprites/Ominous Jungle.png<>uid://bdc6ka1o6s0ae::::res://Scenes/Gameplay/player.tscn<>res://Scripts/platerTesting.gd<>res://Scenes/Levels/camera_2d.gd<>uid://cvxeso2a04pom::::res://Assets/sprites/background/BG_3.png<>uid://bej1s2vki0rwe::::res://Assets/sprites/background/BG_2.png<>uid://bafhjaenupb5o::::res://Assets/sprites/background/BG_1.png<>uid://bdu64nnrkacx3::::res://Scenes/Gameplay/coin.tscn<>res://Scenes/Levels/plat_1.gd<>res://Scenes/Levels/plat_2.gd<>uid://dee0f2i2wgtsh::::res://Assets/sprites/circle_particle.png<>uid://di6hl8njgarj2::::res://Scenes/Gameplay/doublejump_powerup.tscn
-Level3_Intro.tscn::PackedScene::995030598632333098::1732947224::0::1::::<><>::uid://dpw6li4h5ds8d::::res://Scenes/GUI/btn_lvl.tscn
+Level1.tscn::PackedScene::4733162294107681530::1733418438::0::1::::<><>::uid://bdc6ka1o6s0ae::::res://Scenes/Gameplay/player.tscn<>res://Scripts/platerTesting.gd<>res://Scenes/Levels/camera_2d.gd<>uid://bfib4umqc0ux5::::res://Scenes/Gameplay/killzone.tscn<>uid://eyc3l5ocri7a::::res://Assets/sprites/Ominous Jungle.png<>uid://dtemhh2rkmh1w::::res://Assets/sprites/1024x600 tiled background light 3.png<>uid://bkr1q6n38ge37::::res://Assets/sprites/1024x600 tiled background light 2.png<>uid://bnv56sqiuxdvd::::res://Assets/sprites/1024x600 tiled background light 1.png<>uid://0bolmomr37nc::::res://Scenes/Gameplay/dash_powerup.tscn<>res://Scenes/Levels/platform_1.gd<>uid://d2u3wc7kcqkgf::::res://Assets/sprites/WoodenPlatform3.png<>res://Scenes/Levels/platform_2.gd<>res://Scenes/Levels/platform_3.gd<>res://Scenes/Levels/platform_4.gd<>uid://bdu64nnrkacx3::::res://Scenes/Gameplay/coin.tscn<>uid://bx2e6htgpcxsl::::res://Scenes/Gameplay/Win_portal.tscn<>uid://dee0f2i2wgtsh::::res://Assets/sprites/circle_particle.png<>uid://bmesiqqb7aibt::::res://Scenes/Falling Leaves.tscn<>uid://pqc50tpic47h::::res://Scenes/GUI/GUI.tscn<>res://Scripts/dash_text.gd
+Level1_Intro.tscn::PackedScene::3941626417008296512::1733418440::0::1::::<><>::uid://bo4qc8rh5mul7::::res://Assets/sprites/comic/ComicSet/IntroPerLevel/4.png<>uid://dpw6li4h5ds8d::::res://Scenes/GUI/btn_lvl.tscn
+Level2.tscn::PackedScene::4401979746685139767::1733418438::0::1::::<><>::uid://bwpxgmp1wbgdt::::res://Assets/sprites/TrapmoorTileset_v03.png<>uid://bfib4umqc0ux5::::res://Scenes/Gameplay/killzone.tscn<>uid://bdc6ka1o6s0ae::::res://Scenes/Gameplay/player.tscn<>res://Scenes/Levels/camera_2d.gd<>res://Scripts/platerTesting.gd<>uid://b8r3m1mcgldat::::res://Scenes/Gameplay/lava.tscn<>uid://cflncda5mreor::::res://Scenes/Gameplay/fire.tscn<>uid://gtgadt8vj4cm::::res://Assets/sprites/—Pngtree—hazy white glow_6016180.png<>res://Scenes/Levels/platform_1.gd<>res://Scenes/Levels/platform_2.gd<>uid://dee0f2i2wgtsh::::res://Assets/sprites/circle_particle.png<>res://Scenes/Levels/platform_3.gd<>uid://bdu64nnrkacx3::::res://Scenes/Gameplay/coin.tscn<>uid://bx2e6htgpcxsl::::res://Scenes/Gameplay/Win_portal.tscn<>uid://bgwkacbrmxysu::::res://Scenes/Gameplay/wallclimb_powerup.tscn<>res://Scripts/gate.gd<>uid://dcjp480hp1jon::::res://Assets/sounds/explosion.wav<>uid://dh3x1cw5v861y::::res://Scenes/Gameplay/key.tscn
+Level2_Intro.tscn::PackedScene::6725637475672149466::1733418441::0::1::::<><>::uid://d1rnb62e142pu::::res://Assets/sprites/comic/ComicSet/IntroPerLevel/5.png<>uid://dpw6li4h5ds8d::::res://Scenes/GUI/btn_lvl.tscn
+Level3.tscn::PackedScene::8297097801662217743::1733418439::0::1::::<><>::uid://bfib4umqc0ux5::::res://Scenes/Gameplay/killzone.tscn<>uid://b2hdi05th18bs::::res://Assets/sprites/Terrain_and_Props.png<>uid://eyc3l5ocri7a::::res://Assets/sprites/Ominous Jungle.png<>uid://bdc6ka1o6s0ae::::res://Scenes/Gameplay/player.tscn<>res://Scripts/platerTesting.gd<>res://Scenes/Levels/camera_2d.gd<>uid://cvxeso2a04pom::::res://Assets/sprites/background/BG_3.png<>uid://bej1s2vki0rwe::::res://Assets/sprites/background/BG_2.png<>uid://bafhjaenupb5o::::res://Assets/sprites/background/BG_1.png<>uid://bdu64nnrkacx3::::res://Scenes/Gameplay/coin.tscn<>res://Scenes/Levels/plat_1.gd<>res://Scenes/Levels/plat_2.gd<>uid://dee0f2i2wgtsh::::res://Assets/sprites/circle_particle.png<>uid://di6hl8njgarj2::::res://Scenes/Gameplay/doublejump_powerup.tscn
+Level3_Intro.tscn::PackedScene::995030598632333098::1733418441::0::1::::<><>::uid://dpw6li4h5ds8d::::res://Scenes/GUI/btn_lvl.tscn<>uid://dclnlpyh36qvp::::res://Assets/sprites/comic/ComicSet/IntroPerLevel/6.png
 platform_1.gd::GDScript::-1::1732947224::0::1::::<>AnimatableBody2D<>::
 platform_2.gd::GDScript::-1::1732947224::0::1::::<>AnimatableBody2D<>::
 platform_3.gd::GDScript::-1::1732947224::0::1::::<>AnimatableBody2D<>::
@@ -138,9 +153,9 @@ MainMenu(1).tscn::PackedScene::5998493692348808774::1732947224::0::1::::<><>::re
 MainMenu.tscn::PackedScene::5998493692348808774::1732947224::0::1::::<><>::res://Scripts/menu.gd<>uid://dgable46eedoj::::res://Assets/fonts/PixelOperator8.ttf<>uid://wimqebl4kwy1::::res://Assets/sounds/MCRost.mp3<>uid://crndknoqnocr::::res://Assets/fonts/PixelOperator8-Bold.ttf<>uid://canwu4bplrwxm::::res://Assets/music/menu_ost.mp3<>uid://mhij75lh3xrl::::res://Assets/fonts/pricedown bl.otf<>uid://cxn24ov8v3b6f::::res://Assets/sounds/tap.wav<>res://Scripts/menuParallaxOffset.gd<>uid://dhthfhamd7rdb::::res://Assets/sprites/background/sky1.png<>uid://bilg0lft7jen7::::res://Assets/sprites/background/clouds2.png<>uid://c42gmig0k4txp::::res://Assets/sprites/background/mountains3.png<>uid://p8k55ibkuogk::::res://Assets/sprites/background/hills4.png<>uid://bpbqg5cdkeae0::::res://Assets/sprites/background/clouds5.png<>uid://cmae4gerjnnij::::res://Assets/sprites/background/clouds6.png<>uid://c0xi7o4feksv7::::res://Assets/sprites/background/ground7.png<>uid://d3e7qcwleddrh::::res://Assets/sprites/SlimeSprite.png
 MenuOpening(1).tscn::PackedScene::4661232019929090293::1732947224::0::1::::<><>::res://Scripts/menuParallaxOffset.gd<>uid://dhthfhamd7rdb::::res://Assets/sprites/background/sky1.png<>uid://bilg0lft7jen7::::res://Assets/sprites/background/clouds2.png<>uid://c42gmig0k4txp::::res://Assets/sprites/background/mountains3.png<>uid://p8k55ibkuogk::::res://Assets/sprites/background/hills4.png<>uid://bpbqg5cdkeae0::::res://Assets/sprites/background/clouds5.png<>uid://cmae4gerjnnij::::res://Assets/sprites/background/clouds6.png<>uid://c0xi7o4feksv7::::res://Assets/sprites/background/ground7.png
 MenuOpening.tscn::PackedScene::4661232019929090293::1732947224::0::1::::<><>::res://Scripts/menuParallaxOffset.gd<>uid://dhthfhamd7rdb::::res://Assets/sprites/background/sky1.png<>uid://bilg0lft7jen7::::res://Assets/sprites/background/clouds2.png<>uid://c42gmig0k4txp::::res://Assets/sprites/background/mountains3.png<>uid://p8k55ibkuogk::::res://Assets/sprites/background/hills4.png<>uid://bpbqg5cdkeae0::::res://Assets/sprites/background/clouds5.png<>uid://cmae4gerjnnij::::res://Assets/sprites/background/clouds6.png<>uid://c0xi7o4feksv7::::res://Assets/sprites/background/ground7.png
-::res://Scripts/::1732956907
+::res://Scripts/::1733462711
 audio_control.gd::GDScript::-1::1732947224::0::1::::<>Node<>::
-blur.gdshader::Shader::-1::1732956907::0::1::::<><>::
+blur.gdshader::Shader::-1::1733462711::0::1::::<><>::
 btn_lvl.gd::GDScript::-1::1732947224::0::1::::<>Button<>::
 coin.gd::GDScript::-1::1732947224::0::1::::<>Area2D<>::
 coin_score.gd::GDScript::-1::1732947224::0::1::::<>Label<>::
@@ -152,7 +167,7 @@ game.gd::GDScript::-1::1732947224::0::1::::<>Node2D<>::
 gameTest.gd::GDScript::-1::1732947224::0::1::::<>Node2D<>::
 gate.gd::GDScript::-1::1732956355::0::1::::<>Node2D<>::
 Global.gd::GDScript::-1::1732947224::0::1::::<>Node<>::
-gui.tres::StyleBoxTexture::595737857004414053::1732956455::0::1::::<><>::uid://toxii4f3wim7::::res://Assets/sprites/gui_icons.png
+gui.tres::StyleBoxTexture::595737857004414053::1733462706::0::1::::<><>::uid://toxii4f3wim7::::res://Assets/sprites/gui_icons.png
 key.gd::GDScript::-1::1732947224::0::1::::<>Area2D<>::
 killzone.gd::GDScript::-1::1732947224::0::1::::<>Area2D<>::
 level_select.gd::GDScript::-1::1732947224::0::1::::<>Control<>::
@@ -162,7 +177,7 @@ pause_menu.gd::GDScript::-1::1732947224::0::1::::<>Control<>::
 platerTesting.gd::GDScript::-1::1732947224::0::1::::<>CharacterBody2D<>::
 player.gd::GDScript::-1::1732952653::0::1::::<>CharacterBody2D<>::
 playerCamera.gd::GDScript::-1::1732947224::0::1::::<>Camera2D<>::
-scroll_lvlselect.gdshader::Shader::-1::1732956907::0::1::::<><>::
-shockwave_win.gdshader::Shader::-1::1732956907::0::1::::<><>::
+scroll_lvlselect.gdshader::Shader::-1::1733462711::0::1::::<><>::
+shockwave_win.gdshader::Shader::-1::1733462711::0::1::::<><>::
 wallclimb_powerup.gd::GDScript::-1::1732947224::0::1::::<>Area2D<>::
 win_portal.gd::GDScript::-1::1732947224::0::1::::<>Area2D<>::

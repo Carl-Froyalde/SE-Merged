@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://ogaaj6mxmamc"]
+[gd_scene load_steps=4 format=3 uid="uid://ogaaj6mxmamc"]
 
 [ext_resource type="PackedScene" uid="uid://dpw6li4h5ds8d" path="res://Scenes/GUI/btn_lvl.tscn" id="1_jwwqo"]
+[ext_resource type="Texture2D" uid="uid://dclnlpyh36qvp" path="res://Assets/sprites/comic/ComicSet/IntroPerLevel/6.png" id="1_lmmu4"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_dpp61"]
 font_size = 54
@@ -20,8 +21,18 @@ offset_right = 1159.0
 offset_bottom = 647.0
 color = Color(0.874187, 0.420901, 0.492378, 1)
 
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_top = -4.0
+offset_right = 842.0
+offset_bottom = 647.0
+texture = ExtResource("1_lmmu4")
+expand_mode = 1
+stretch_mode = 5
+
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 0
+offset_left = 840.0
 offset_right = 1155.0
 offset_bottom = 650.0
 
@@ -33,10 +44,10 @@ label_settings = SubResource("LabelSettings_dpp61")
 
 [node name="btn_back" parent="." instance=ExtResource("1_jwwqo")]
 layout_mode = 0
-offset_left = 39.0
-offset_top = 519.0
-offset_right = 208.0
-offset_bottom = 614.0
+offset_left = 867.0
+offset_top = 16.0
+offset_right = 1135.0
+offset_bottom = 128.0
 text = "Back
 "
 level_path = "res://Scenes/GUI/Level Select.tscn"
@@ -44,10 +55,10 @@ music_path = "res://Assets/music/lvl3_bg.mp3.import"
 
 [node name="btn_start" parent="." instance=ExtResource("1_jwwqo")]
 layout_mode = 0
-offset_left = 948.0
-offset_top = 511.0
-offset_right = 1117.0
-offset_bottom = 606.0
+offset_left = 867.0
+offset_top = 510.0
+offset_right = 1135.0
+offset_bottom = 622.0
 text = "Start
 "
 level_path = "res://Scenes/Levels/Level3.tscn"
