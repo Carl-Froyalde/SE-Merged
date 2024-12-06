@@ -1367,6 +1367,7 @@ libraries = {
 
 [node name="open_fx" type="AudioStreamPlayer2D" parent="GateRange"]
 stream = ExtResource("17_sskpl")
+volume_db = 24.0
 
 [node name="Particles and Effects" type="Node" parent="."]
 
@@ -1376,7 +1377,7 @@ environment = SubResource("Environment_alwyx")
 [node name="HarmIndicator2" type="GPUParticles2D" parent="Particles and Effects"]
 modulate = Color(2, 1.5, 1.5, 1)
 position = Vector2(1729, 798)
-amount = 5
+amount = 2
 process_material = SubResource("ParticleProcessMaterial_tqjxh")
 texture = ExtResource("10_8v7ou")
 lifetime = 1.5
@@ -1384,7 +1385,7 @@ lifetime = 1.5
 [node name="HarmIndicator3" type="GPUParticles2D" parent="Particles and Effects"]
 modulate = Color(2, 1.5, 1.5, 1)
 position = Vector2(1738, 646)
-amount = 5
+amount = 1
 process_material = SubResource("ParticleProcessMaterial_eeip5")
 texture = ExtResource("10_8v7ou")
 lifetime = 1.5
@@ -1392,7 +1393,7 @@ lifetime = 1.5
 [node name="HarmIndicator4" type="GPUParticles2D" parent="Particles and Effects"]
 modulate = Color(2, 1.5, 1.5, 1)
 position = Vector2(2145, 941)
-amount = 5
+amount = 2
 process_material = SubResource("ParticleProcessMaterial_hye6m")
 texture = ExtResource("10_8v7ou")
 lifetime = 1.5
@@ -1438,8 +1439,8 @@ libraries = {
 "": SubResource("AnimationLibrary_m532o")
 }
 
-[connection signal="body_entered" from="powerup" to="Texts/DoubleJumpText" method="_on_powerup_body_entered"]
 [connection signal="body_entered" from="powerup" to="Texts/DoubleJumpText" method="_on_wallclimb_powerup_body_entered"]
+[connection signal="body_entered" from="powerup" to="Texts/DoubleJumpText" method="_on_powerup_body_entered"]
 [connection signal="body_entered" from="GateRange" to="GateRange" method="_on_body_entered"]
 [connection signal="body_exited" from="GateRange" to="GateRange" method="_on_body_exited"]
 [connection signal="body_entered" from="Key" to="GateRange" method="_on_key_body_entered"]

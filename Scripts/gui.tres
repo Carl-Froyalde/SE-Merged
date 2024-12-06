@@ -4,4 +4,5 @@
 
 [resource]
 texture = ExtResource("1_yp24u")
-region_rect = Rect2(34, 2, 44, 44)
+texture_margin_top = 1.78372
+region_rect = Rect2(81, 1, 30, 14)

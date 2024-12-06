@@ -20,6 +20,7 @@ func _on_resume_pressed() -> void:
 
 func _on_restart_pressed() -> void:
 	resume()
+	Global.currentHealth = 3
 	get_tree().reload_current_scene()
  
 func _on_quit_pressed() -> void:

@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dpw6li4h5ds8d" path="res://Scenes/GUI/btn_lvl.tscn" id="1_4bb1t"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_dpp61"]
-font_size = 54
+font_size = 100
 
 [node name="Level1_Intro" type="Control"]
 layout_mode = 3
@@ -47,20 +47,22 @@ label_settings = SubResource("LabelSettings_dpp61")
 
 [node name="btn_back" parent="." instance=ExtResource("1_4bb1t")]
 layout_mode = 0
-offset_left = 1541.0
+offset_left = 1431.0
 offset_top = 16.0
-offset_right = 1809.0
-offset_bottom = 128.0
+offset_right = 1897.0
+offset_bottom = 211.0
+theme_override_font_sizes/font_size = 50
 text = "Back
 "
 level_path = "res://Scenes/GUI/Level Select.tscn"
 
 [node name="btn_start" parent="." instance=ExtResource("1_4bb1t")]
 layout_mode = 0
-offset_left = 1541.0
-offset_top = 933.0
-offset_right = 1809.0
+offset_left = 1451.0
+offset_top = 859.0
+offset_right = 1896.0
 offset_bottom = 1045.0
+theme_override_font_sizes/font_size = 50
 text = "Start
 "
 level_path = "res://Scenes/Levels/Level1.tscn"

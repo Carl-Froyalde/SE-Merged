@@ -3,7 +3,6 @@
 [ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="1_h6637"]
 [ext_resource type="Shader" path="res://Scripts/blur.gdshader" id="1_on8he"]
 [ext_resource type="Texture2D" uid="uid://toxii4f3wim7" path="res://Assets/sprites/gui_icons.png" id="3_umi1x"]
-[ext_resource type="StyleBox" uid="uid://iqtylcxushxl" path="res://Scripts/gui.tres" id="4_f0d0e"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d46w1"]
 texture = ExtResource("3_umi1x")
@@ -15,6 +14,10 @@ Button/styles/normal = SubResource("StyleBoxTexture_d46w1")
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ptaoe"]
 shader = ExtResource("1_on8he")
 shader_parameter/lod = 0.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xbq7d"]
+texture = ExtResource("3_umi1x")
+region_rect = Rect2(34, 2, 44, 44)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k5tpv"]
 
@@ -99,6 +102,7 @@ offset_right = 1944.0
 offset_bottom = 1102.0
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
+unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 layout_mode = 1
@@ -114,7 +118,7 @@ offset_bottom = 44.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.8, 1.8)
-theme_override_styles/panel = ExtResource("4_f0d0e")
+theme_override_styles/panel = SubResource("StyleBoxTexture_xbq7d")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
 custom_minimum_size = Vector2(50, 0)

@@ -46,10 +46,11 @@ label_settings = SubResource("LabelSettings_dpp61")
 
 [node name="btn_back" parent="." instance=ExtResource("1_jwwqo")]
 layout_mode = 0
-offset_left = 1534.0
-offset_top = 16.0
-offset_right = 1802.0
-offset_bottom = 128.0
+offset_left = 1441.0
+offset_top = 14.0
+offset_right = 1908.0
+offset_bottom = 209.0
+theme_override_font_sizes/font_size = 50
 text = "Back
 "
 level_path = "res://Scenes/GUI/Level Select.tscn"
@@ -57,10 +58,11 @@ music_path = "res://Assets/music/lvl3_bg.mp3.import"
 
 [node name="btn_start" parent="." instance=ExtResource("1_jwwqo")]
 layout_mode = 0
-offset_left = 1534.0
-offset_top = 926.0
-offset_right = 1802.0
-offset_bottom = 1038.0
+offset_left = 1444.0
+offset_top = 867.0
+offset_right = 1910.0
+offset_bottom = 1062.0
+theme_override_font_sizes/font_size = 50
 text = "Start
 "
 level_path = "res://Scenes/Levels/Level3.tscn"

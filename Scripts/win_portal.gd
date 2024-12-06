@@ -11,3 +11,4 @@ func _on_area_entered(area: Area2D) -> void:
 
 func go_to_victory_scene() -> void:
 	get_tree().change_scene_to_file(victory_scene)
+	queue_free()

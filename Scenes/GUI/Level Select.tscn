@@ -12,22 +12,22 @@
 shader = ExtResource("3_7fr2q")
 shader_parameter/speed = 0.3
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s14db"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q8nyl"]
 texture = ExtResource("2_mb3n0")
 texture_margin_left = 5.0
 texture_margin_top = 5.0
 texture_margin_right = 5.0
 texture_margin_bottom = 5.0
-region_rect = Rect2(81, 1, 30, 14)
+region_rect = Rect2(81, 18, 30, 13)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_58jdt"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hcltn"]
 
 [sub_resource type="Theme" id="Theme_y6g4y"]
-Button/styles/disabled = SubResource("StyleBoxTexture_s14db")
-Button/styles/focus = SubResource("StyleBoxEmpty_58jdt")
-Button/styles/hover = SubResource("StyleBoxTexture_s14db")
-Button/styles/normal = SubResource("StyleBoxTexture_s14db")
-Button/styles/pressed = SubResource("StyleBoxTexture_s14db")
+Button/styles/disabled = SubResource("StyleBoxTexture_q8nyl")
+Button/styles/focus = SubResource("StyleBoxEmpty_hcltn")
+Button/styles/hover = SubResource("StyleBoxTexture_q8nyl")
+Button/styles/normal = SubResource("StyleBoxTexture_q8nyl")
+Button/styles/pressed = SubResource("StyleBoxTexture_q8nyl")
 
 [node name="LevelSelect" type="Control"]
 texture_filter = 1
@@ -114,3 +114,28 @@ scale = Vector2(5, 5)
 texture = ExtResource("6_ldv1m")
 
 [node name="transition" parent="." instance=ExtResource("7_ogoew")]
+
+[node name="Back" type="GridContainer" parent="."]
+texture_filter = 1
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.497
+anchor_top = 0.652
+anchor_right = 0.497
+anchor_bottom = 0.652
+offset_left = 744.76
+offset_top = -675.16
+offset_right = 844.76
+offset_bottom = -642.16
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(4, 4)
+size_flags_horizontal = 4
+theme = SubResource("Theme_y6g4y")
+
+[node name="Back" parent="Back" instance=ExtResource("1_86dxe")]
+layout_mode = 2
+text = "Back
+"
+level_path = "res://Scenes/GUI/MainMenu.tscn"

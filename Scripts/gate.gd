@@ -10,6 +10,7 @@ func _on_body_entered(body: Node2D) -> void:
 			cam.applyShake()
 			open_fx.play()
 			gate.queue_free()
+			await open_fx.finished
 			queue_free()
 		else:
 			$AnimationPlayer.play("show")

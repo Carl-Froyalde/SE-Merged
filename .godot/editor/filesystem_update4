@@ -1,22 +1,12 @@
 res://default_env.tres
 res://Scenes/Levels/Level1_Intro.tscn
 res://Scripts/gui.tres
+res://Scenes/GUI/Level Select.tscn
+res://Scenes/GUI/btn_lvl.tscn
+res://Scenes/Levels/Level2_Intro.tscn
 res://Scenes/GUI/MainMenu.tscn
 res://Scenes/Levels/Level3_Intro.tscn
-res://Scenes/Levels/Level3.tscn
-res://Scenes/GUI/backstory.tscn
 res://Scenes/Levels/Level1.tscn
 res://Scenes/Levels/Level2.tscn
-res://Scenes/Levels/Level2_Intro.tscn
-res://Scenes/GUI/btn_lvl.tscn
-res://Scenes/Gameplay/Chest.tscn
-res://Scenes/GUI/backstory.gd
-res://Scripts/menu.gd
+res://Scenes/Levels/Level3.tscn
 res://Scenes/GUI/pause_menu.tscn
-res://Scenes/GUI/Level Select.tscn
-res://Scenes/GUI/GUI.tscn
-res://Scripts/win_portal.gd
-res://Scenes/Gameplay/player.tscn
-res://Scripts/Player.gd
-res://Scripts/dash_text.gd
-res://Scenes/Gameplay/wallclimb_powerup.tscn
