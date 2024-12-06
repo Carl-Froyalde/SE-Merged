@@ -208,6 +208,7 @@ animations = [{
 [node name="Gui" type="CanvasLayer"]
 
 [node name="PauseMenu" parent="." instance=ExtResource("1_iv3t0")]
+z_index = 1
 
 [node name="CoinScore" type="Label" parent="."]
 offset_left = 381.0

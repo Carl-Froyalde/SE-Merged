@@ -9,7 +9,7 @@ const DASH_SPEED = 400
 const CLIMB_SPEED = -100.0  # Speed for climbing up the wall
 var can_double_jump = false
 var dashing = false
-var can_dash
+var can_dash = true
 var is_climbing = false  # New variable for climbing state
 var is_hanging = false
 var start_pos : Vector2
@@ -29,7 +29,6 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	# Use global `can_double_jump` variable correctly
 	var can_wall_climb = Global.unlockedWallClimb
-	var can_dash = Global.unlockedDash
 
 	if is_on_floor():
 		$AnimatedSprite2D.play("idle")

@@ -769,4 +769,5 @@ libraries = {
 [node name="Chest" parent="." instance=ExtResource("21_wn3mc")]
 position = Vector2(492, 65)
 
+[connection signal="body_entered" from="powerup" to="Texts/DashText" method="_on_powerup_body_entered"]
 [connection signal="body_entered" from="powerup" to="Texts/DashText" method="_on_dash_powerup_body_entered"]
